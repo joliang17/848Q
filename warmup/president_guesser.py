@@ -1,4 +1,5 @@
 import time
+import re
 
 from guesser import Guesser
 
@@ -66,11 +67,87 @@ class PresidentGuesser(Guesser):
         
         # Update this code so that we can have a different president than Joe
         # Biden
+        # print(question)
 
-        print(question)
+        question_time = re.findall(r'\w{3} \w{3} \d{2} \d{2}:\d{2}:\d{2} \d{4}', question)
+        if len(question_time) == 0:
+            return []
         
-        candidates = ["Joseph R. Biden"]
+        q_time = time.strptime(question_time[0], "%a %b %d %H:%M:%S %Y")
 
+        hb = 12
+
+        if q_time.tm_year == 1789:
+            if (q_time.tm_mon < 4) or (q_time.tm_mon == 4 and q_time.tm_mday < 30) or (q_time.tm_mon == 4 and q_time.tm_mday == 30 and q_time.tm_hour < hb):
+                return []
+            else:
+                guesses = [{"guess": 'George Washington'}]
+                return guesses[:n_guesses]
+            
+        if q_time.tm_year == 1849 and q_time.tm_mon == 3:
+            if (q_time.tm_mday == 4 and q_time.tm_hour >= hb) or (q_time.tm_mday == 5 and q_time.tm_hour < hb):
+                guesses = [{"guess": 'David Rice Atchison'}]
+                return guesses[:n_guesses]
+            
+        if q_time.tm_year == 1881:
+            if (q_time.tm_mon < 3) or (q_time.tm_mon == 3 and q_time.tm_mday < 4) or (q_time.tm_mon == 3 and q_time.tm_mday == 4 and q_time.tm_hour < hb):
+                guesses = [{"guess": 'Rutherford Birchard Hayes'}]
+                return guesses[:n_guesses]
+            elif (q_time.tm_mon < 9) or (q_time.tm_mon == 9 and q_time.tm_mday < 19) or (q_time.tm_mon == 9 and q_time.tm_mday == 19 and q_time.tm_hour < hb):
+                guesses = [{"guess": 'James A. Garfield'}]
+                return guesses[:n_guesses]
+            else:
+                guesses = [{"guess": 'Chester A. Arthur'}]
+                return guesses[:n_guesses]
+        
+        if q_time.tm_year == 1841:
+            if (q_time.tm_mon < 3) or (q_time.tm_mon == 3 and q_time.tm_mday < 4) or (q_time.tm_mon == 3 and q_time.tm_mday == 4 and q_time.tm_hour < hb):
+                guesses = [{"guess": 'Martin Van Bure'}]
+                return guesses[:n_guesses]
+            elif (q_time.tm_mon < 4) or (q_time.tm_mon == 4 and q_time.tm_mday < 6) or (q_time.tm_mon == 4 and q_time.tm_mday == 6 and q_time.tm_hour < hb):
+                guesses = [{"guess": 'William Henry Harrison'}]
+                return guesses[:n_guesses]
+            else:
+                guesses = [{"guess": 'John Tyler'}]
+                return guesses[:n_guesses]
+            
+        if q_time.tm_year == 1923:
+            if (q_time.tm_mon < 8) or (q_time.tm_mon == 8 and q_time.tm_mday < 2) or (q_time.tm_mon == 8 and q_time.tm_mday == 2 and q_time.tm_hour < hb):
+                guesses = [{"guess": 'Warren G. Harding'}]
+                return guesses[:n_guesses]
+            else:
+                guesses = [{"guess": 'Calvin Coolidge'}]
+                return guesses[:n_guesses]
+        
+        if q_time.tm_year == 1945:
+            if (q_time.tm_mon < 4) or (q_time.tm_mon == 4 and q_time.tm_mday < 12) or (q_time.tm_mon == 4 and q_time.tm_mday == 12 and q_time.tm_hour < hb):
+                guesses = [{"guess": 'Franklin D. Roosevelt'}]
+                return guesses[:n_guesses]
+            else:
+                guesses = [{"guess": 'Harry S. Truman'}]
+                return guesses[:n_guesses]
+            
+        if q_time.tm_year <= 1933:
+            if (q_time.tm_mon == 3 and q_time.tm_mday < 4) or (q_time.tm_mon == 3 and q_time.tm_mday == 4 and q_time.tm_hour < hb):
+                q_year = q_time.tm_year - 1
+            else:
+                q_year = q_time.tm_year
+
+        elif q_time.tm_year <= 2025:
+            if (q_time.tm_mon == 1 and q_time.tm_mday < 20) or (q_time.tm_mon == 1 and q_time.tm_mday == 20 and q_time.tm_hour < hb):
+                q_year = q_time.tm_year - 1
+            else:
+                q_year = q_time.tm_year
+        
+        else:
+            return []
+
+        candidates = []
+        for name, period in self._lookup.items():
+            if q_year >= period[0].tm_year and q_year < period[1].tm_year: 
+                candidates.append(name)
+
+        # print(candidates)
         guesses = []
         for ii in candidates:
             guesses.append({"guess": ii})
@@ -82,7 +159,15 @@ if __name__ == "__main__":
 
     pg.train(training_data)
     
-    for date in ["Who was president on Wed Jan 25 06:20:00 2023?",
-                     "Who was president on Sat May 23 02:00:00 1982?"]:
+    for date in ["Who was president on Wed Jan 25 06:20:00 2023?", 
+                    "Who was president on Sat May 23 02:00:00 1982?",
+                    "Who was president on Sun Mar 04 02:00:00 1849?",
+                    "Who was president on Sun Mar 04 16:00:00 1849?",
+                    "Who was president on Sun Mar 05 02:00:00 1849?",
+                    "Who was president on Sun Mar 05 14:00:00 1849?",
+                    "Who was president on Tue Jan 17 11:00:00 2021?",
+                    "Who was president on Tue Jan 20 11:00:00 2021?",
+                    "Who was president on Tue Jan 21 12:00:00 2025?",
+                    ]:
         print(date, pg(date)[0]["guess"])
-        
+
