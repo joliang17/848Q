@@ -15,7 +15,8 @@ There are two requirements on the substance of what you must turn in:
 
  1. Make an improvement to the guesser that uses representation
  learning in some way.  This must be a subclass of the generic
- "Guesser" class that respects the underlying API.
+ "Guesser" class that respects the underlying API.  This could be a
+ Muppet model or something simpler.
 
  2. Make an improvement to the buzzer that uses sequence modeling in
  some way.  This must be a subclass of the generic "Buzzer" class that
@@ -29,10 +30,8 @@ things that are too computationally expensive won't work.
 What You're Not Allowed to Do
 =============================
 
-  1.  Do anything that is so complicated that it cannot run on
-      GradeScope (this rules out most Muppet Models).
-  2.  Break the underlying API (otherwise, you can't be on the leaderboad)
-  3.  Use QANTA test data in training your code.
+  1.  Break the underlying API (otherwise, you can't be on the leaderboad)
+  2.  Use QANTA test data in training your code.
 
 Getting things to Work
 ===============
@@ -50,6 +49,9 @@ having a project work well is having simple enough code that will run
 quickly and that you can get answers from.  So you need to think about
 the simplest approach that could work, test the hypothesis, and get
 results.  This will hopefully serve you well for your project.
+
+We encourage you to use other code as much as possible.  Don't try to
+reinvent the wheel.  The goal is to get things to work on these data!
 
 Suggestions
 ===========
@@ -72,6 +74,7 @@ For sequence learning:
   additional guess).
   3.  Parse the questions and use that information to improve the
   guesser or buzzer.
+  4.  Change the buzzer to user the guess history and feed it into a model like [crf-suite](https://pypi.org/project/python-crfsuite/).
 
 For Muppet models:
 
@@ -113,10 +116,9 @@ where it's easier to "share the burden".
 What you Have to Upload
 =======================
 
-Upload code that runs on the autograder (e.g., if you train a model,
-include a pickle file / model file so that it can be run directly).
-Again, Gradescope has a maximum upload size as well, so your model
-should be less than 200MB.
+Upload code (even if it doesn't run on the autograder).  However, it
+should run on the autograder given infinite time (we want to be able
+to easily run it offline).
 
 Also upload a writeup explaining what you did (with citations as
 appropriate).  The writeup should be comprehensive enough that the TA
@@ -126,7 +128,7 @@ the things you try simple).
 Grading
 =======
 
-30 points are available for satisfying the spirit of the assignment,
+40 points are available for satisfying the spirit of the assignment,
 explaining what you did, and documenting the code well enough for the
 TA to understand what's going on.
 
