@@ -12,6 +12,10 @@ from tqdm import tqdm
 
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import TfidfVectorizer
+import nltk
+nltk.download('stopwords')
+from nltk.corpus import stopwords
 
 MODEL_PATH = 'tfidf.pickle'
 INDEX_PATH = 'index.pickle'
@@ -50,7 +54,8 @@ class TfidfGuesser(Guesser):
         """
 
         # You'll need add the vectorizer here and replace this fake vectorizer
-        self.tfidf_vectorizer = DummyVectorizer()
+        stop = list(stopwords.words('english'))
+        self.tfidf_vectorizer = TfidfVectorizer(min_df=min_df, max_df=max_df, stop_words=stop)
         self.tfidf = None 
         self.questions = None
         self.answers = None
@@ -69,7 +74,7 @@ class TfidfGuesser(Guesser):
         Guesser.train(self, training_data, answer_field, split_by_sentence, min_length,
                           max_length, remove_missing_pages)
 
-        self.tfidf = self.tfidf_vectorizer.transform(self.questions)
+        self.tfidf = self.tfidf_vectorizer.fit_transform(self.questions)
         logging.info("Creating tf-idf dataframe with %i" % len(self.questions))
         
     def save(self):
@@ -78,6 +83,7 @@ class TfidfGuesser(Guesser):
         """
         
         path = self.filename
+        os.makedirs(path, exist_ok=True)
         with open("%s.vectorizer.pkl" % path, 'wb') as f:
             pickle.dump(self.tfidf_vectorizer, f)
         
@@ -103,17 +109,20 @@ class TfidfGuesser(Guesser):
         top_sim = []
 
         # Compute the cosine similarity
+        if isinstance(question, list):
+            question = question[0]
+
         question_tfidf = self.tfidf_vectorizer.transform([question])
         cosine_similarities = cosine_similarity(question_tfidf, self.tfidf)
+
         cos = cosine_similarities[0]
         indices = cos.argsort()[::-1]
+
         guesses = []
         for i in range(max_n_guesses):
-            # The line below is wrong but lets the code run for the homework.
-            # Remove it or fix it!
-            idx = i
+            idx = indices[i]
             guess =  {"question": self.questions[idx], "guess": self.answers[idx],
-                      "confidence": cos[idx]}
+                    "confidence": cos[idx]}
             guesses.append(guess)
         return guesses
 
@@ -205,8 +214,12 @@ if __name__ == "__main__":
                  "The economic law that says 'good money drives out bad'",
                  "located outside Boston, the oldest University in the United States"]
 
-    guesses = guesser.batch_guess(questions, 3, 2)
+    # guesses = guesser.batch_guess(questions, 3, 2)
+    for question in questions:
+        guesses = guesser(questions, 3)
+        print(question)
 
-    for qq, gg in zip(questions, guesses):
+        for gg in guesses:
+            print(gg)
+
         print("----------------------")
-        print(qq, gg)
