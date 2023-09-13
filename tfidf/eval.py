@@ -175,15 +175,20 @@ if __name__ == "__main__":
         assert False, "Gotta evaluate something"
         
     total = sum(outcomes[x] for x in outcomes if x != "hit")
+    # for ii in outcomes:
+    #     print("%s %0.2f\n===================\n" % (ii, outcomes[ii] / total))
+        # if len(examples[ii]) > 10:
+        #     population = list(random.sample(examples[ii], 10))
+        # else:
+        #     population = examples[ii]
+        # for jj in population:
+        #     print(pretty_feature_print(jj))
+        # print("=================")
+    
+        
+    total = sum(outcomes[x] for x in outcomes if x != "hit")
     for ii in outcomes:
-        print("%s %0.2f\n===================\n" % (ii, outcomes[ii] / total))
-        if len(examples[ii]) > 10:
-            population = list(random.sample(examples[ii], 10))
-        else:
-            population = examples[ii]
-        for jj in population:
-            print(pretty_feature_print(jj))
-        print("=================")
+        print("%s %0.2f\n" % (ii, outcomes[ii] / total))
         
     if flags.evaluate == "buzzer":
         for weight, feature in zip(buzzer._classifier.coef_[0], buzzer._featurizer.feature_names_):
@@ -193,4 +198,7 @@ if __name__ == "__main__":
               (outcomes["best"], total, (outcomes["best"] + outcomes["waiting"]) / total,
                outcomes["best"] - outcomes["aggressive"] * 0.5, unseen))
     elif flags.evaluate == "guesser":
-        print("Precision @1: %0.4f Recall: %0.4f" % (outcomes["hit"]/total, outcomes["close"]/total))
+        precision = outcomes["hit"]/total
+        recall = outcomes["close"]/total
+        F1_score = (2*precision * recall)/(precision + recall)
+        print("Precision @1: %0.4f Recall: %0.4f, F1: %0.4f" % (precision, recall, F1_score))

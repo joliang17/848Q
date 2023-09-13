@@ -56,6 +56,7 @@ class TfidfGuesser(Guesser):
         # You'll need add the vectorizer here and replace this fake vectorizer
         stop = list(stopwords.words('english'))
         self.tfidf_vectorizer = TfidfVectorizer(min_df=min_df, max_df=max_df, stop_words=stop)
+        # self.tfidf_vectorizer = TfidfVectorizer(min_df=min_df, max_df=max_df, stop_words='english')
         self.tfidf = None 
         self.questions = None
         self.answers = None
@@ -163,12 +164,15 @@ class TfidfGuesser(Guesser):
             block = questions[start:stop]
             logging.info("Block %i to %i (%i elements)" % (start, stop, len(block)))
             
-            
+            blocks_tfidf = self.tfidf_vectorizer.transform(block)
+            cos_sim = cosine_similarity(blocks_tfidf, self.tfidf)
+            cos_sim_idx = np.argsort(cos_sim, axis=-1)[:, ::-1]
+            top_hits = cos_sim_idx[:, :max_n_guesses]
 
             for question in range(len(block)):
                 guesses = []
                 for idx in list(top_hits[question]):
-                    score = 0.0
+                    score = cos_sim[question, idx]
                     guesses.append({"guess": self.answers[idx], "confidence": score, "question": self.questions[idx]})
                 all_guesses.append(guesses)
 
@@ -214,12 +218,16 @@ if __name__ == "__main__":
                  "The economic law that says 'good money drives out bad'",
                  "located outside Boston, the oldest University in the United States"]
 
-    # guesses = guesser.batch_guess(questions, 3, 2)
-    for question in questions:
-        guesses = guesser(questions, 3)
-        print(question)
-
-        for gg in guesses:
-            print(gg)
-
+    guesses = guesser.batch_guess(questions, 3, 2)
+    for pp, gg in list(zip(questions, guesses)):
+        print(pp, gg)
         print("----------------------")
+
+    # for question in questions:
+    #     guesses = guesser(questions, 3)
+    #     print(question)
+
+    #     for gg in guesses:
+    #         print(gg)
+
+    #     print("----------------------")
