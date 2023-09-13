@@ -44,7 +44,7 @@ class TfidfGuesser(Guesser):
     """
     Class that, given a query, finds the most similar question to it.
     """
-    def __init__(self, filename, min_df=10, max_df=0.4):
+    def __init__(self, filename, min_df=1, max_df=1.0):
         """
         Initializes data structures that will be useful later.
 
