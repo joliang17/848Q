@@ -55,7 +55,7 @@ class TfidfGuesser(Guesser):
 
         # You'll need add the vectorizer here and replace this fake vectorizer
         stop = list(stopwords.words('english'))
-        self.tfidf_vectorizer = TfidfVectorizer(min_df=min_df, max_df=max_df, stop_words=stop)
+        self.tfidf_vectorizer = TfidfVectorizer(min_df=min_df, max_df=max_df, stop_words=stop, sublinear_tf=True)
         # self.tfidf_vectorizer = TfidfVectorizer(min_df=min_df, max_df=max_df, stop_words='english')
         self.tfidf = None 
         self.questions = None
