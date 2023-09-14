@@ -17,7 +17,7 @@ class LogisticBuzzer(Buzzer):
     def train(self):
         X = Buzzer.train(self)
 
-        self._classifier = LogisticRegression()
+        self._classifier = LogisticRegression(C=8.0)
         self._classifier.fit(X, self._correct)
 
     def save(self):
