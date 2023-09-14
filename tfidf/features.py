@@ -32,8 +32,8 @@ class LengthFeature(Feature):
     """
 
     def __call__(self, question, run, guess):
-        # How many characters long is the question?
-        yield ("char", log(1 + len(run)))
+        # # How many characters long is the question?
+        # yield ("char", log(1 + len(run)))
 
         # How many words long is the question?
         yield ("word", log(1 + len(run.split())))
@@ -94,16 +94,54 @@ class WikipediaFeature(Feature):
         from buzzer import normalize_answer
         self.normalize = normalize_answer
         self.name = name
+        self.matches = 10
+
+        # self.train_save()
+        self.load()
+
+    def load(self):
+        import pickle
+        path = 'models/WikiVectors'
+        with open("%s.vectorizer.pkl" % path, 'rb') as f:
+            self.vec = pickle.load(f)
+        
+        with open("%s.tfidf.pkl" % path, 'rb') as f:
+            self.docs = pickle.load(f)
+
+        with open("%s.wiki_text.pkl" % path, 'rb') as f:
+            self.wiki_text = pickle.load(f)
+
+        with open("%s.wiki_docs.pkl" % path, 'rb') as f:
+            self.doc_names = pickle.load(f)
+
+    def train_save(self):
         from sklearn.feature_extraction.text import TfidfVectorizer
-        with open('./data/wiki_page_text.json', 'r') as f:
+        with open('../data/wiki_page_text.json', 'r') as f:
         # with open('/home/neal/nlp-hw/feateng/data/wiki_page_text.json', 'r') as f:
             wiki = json.load(f)
         self.vec = TfidfVectorizer()
+
         wiki = [p for p in wiki if p is not None and p['page'] is not None and p['text'] is not None]
         self.doc_names = [self.normalize(clean(p['page'])) for p in wiki]
-        # self.docs = self.vec.fit_transform([clean(p['text']) for p in wiki])
+        self.wiki_text = [clean(p['text']) for p in wiki]
+        self.docs = self.vec.fit_transform(self.wiki_text)
 
-        # self.matches = 10
+        import pickle
+        import os
+        path = 'models/WikiVectors'
+        os.makedirs(path, exist_ok=True)
+        with open("%s.vectorizer.pkl" % path, 'wb') as f:
+            pickle.dump(self.vec, f)
+        
+        with open("%s.tfidf.pkl" % path, 'wb') as f:
+            pickle.dump(self.docs, f)
+
+        with open("%s.wiki_text.pkl" % path, 'wb') as f:
+            pickle.dump(self.wiki_text, f)
+
+        with open("%s.wiki_docs.pkl" % path, 'wb') as f:
+            pickle.dump(self.doc_names, f)
+
 
     def __call__(self, question, run, guess):
         norm_guess = self.normalize(guess)
@@ -112,7 +150,7 @@ class WikipediaFeature(Feature):
         in_wiki = int(norm_guess in self.doc_names)
         yield ('in_wiki', int(norm_guess in self.doc_names))
         
-        tf_q = self.vec.transform([question['first_sentence']])
+        tf_q = self.vec.transform([run])
         if in_wiki:
             # similarity between guess and wiki page
             idx = self.doc_names.index(norm_guess)
@@ -123,7 +161,7 @@ class WikipediaFeature(Feature):
         else:
             yield ('sim', 0)
         # get question first sentence
-        tf_q = self.vec.transform([question['first_sentence']])
+        tf_q = self.vec.transform([run])
 
         # get similar Wikipedia sentences by tfidf
         cos_sim = linear_kernel(tf_q, self.docs).flatten()
