@@ -129,7 +129,7 @@ class Guesser:
 
         answers_to_questions = self.split_examples(training_data, answer_field, split_by_sentence,
                                                    min_length, max_length)
-        self.questions, self.answers = self.filter_answers(answers_to_questions)
+        self.questions, self.answers = self.filter_answers(answers_to_questions, remove_missing_pages=remove_missing_pages)
 
         return answers_to_questions
 

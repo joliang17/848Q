@@ -28,7 +28,8 @@ def add_question_params(parser):
 
 def add_buzzer_params(parser):
     parser.add_argument('--buzzer_guessers', nargs='+', default = ['TfidfGuesser'], help='Guessers to feed into Buzzer', type=str)
-    parser.add_argument('--features', nargs='+', help='Features to feed into Buzzer', type=str,  default=['Length'])   # TODO:   
+    # parser.add_argument('--features', nargs='+', help='Features to feed into Buzzer', type=str,  default=['Length', 'WikiScore'])
+    parser.add_argument('--features', nargs='+', help='Features to feed into Buzzer', type=str,  default=['Length', 'WikiScore'])
     parser.add_argument('--buzzer_type', type=str, default="LogisticBuzzer")
     parser.add_argument('--run_length', type=int, default=100)
     parser.add_argument('--LogisticBuzzer_filename', type=str, default="models/LogisticBuzzer")    
@@ -102,12 +103,12 @@ def load_questions(flags, secondary=False):
     return questions
 
 def instantiate_guesser(guesser_type, flags, load):
-    import torch
+    # import torch
     
     # TODO: Move this to params so that it would apply 
-    cuda = not flags.no_cuda and torch.cuda.is_available()
-    device = torch.device("cuda" if cuda else "cpu")
-    logging.info("Using device '%s' (cuda flag=%s)" % (device, str(flags.no_cuda)))
+    # cuda = not flags.no_cuda and torch.cuda.is_available()
+    # device = torch.device("cuda" if cuda else "cpu")
+    # logging.info("Using device '%s' (cuda flag=%s)" % (device, str(flags.no_cuda)))
     
     guesser = None
     logging.info("Initializing guesser of type %s" % guesser_type)
@@ -122,17 +123,17 @@ def instantiate_guesser(guesser_type, flags, load):
         guesser = TfidfGuesser(flags.TfidfGuesser_filename)  
         if load:                                             
             guesser.load()
-    if guesser_type == "DanGuesser":                                
-        from dan_guesser import DanGuesser                          
-        guesser = DanGuesser(filename=flags.DanGuesser_filename, answer_field=flags.guesser_answer_field, min_token_df=flags.DanGuesser_min_df, max_token_df=flags.DanGuesser_max_df,
-                    min_answer_freq=flags.DanGuesser_min_answer_freq, embedding_dimension=flags.DanGuesser_embedding_dim,
-                    hidden_units=flags.DanGuesser_hidden_units, nn_dropout=flags.DanGuesser_dropout,
-                    grad_clipping=flags.DanGuesser_grad_clipping, unk_drop=flags.DanGuesser_unk_drop,
-                    batch_size=flags.DanGuesser_batch_size,
-                    num_epochs=flags.DanGuesser_num_epochs, num_workers=flags.DanGuesser_num_workers,
-                    device=device)
-        if load:                                                    
-            guesser.load()                                          
+    # if guesser_type == "DanGuesser":                                
+    #     from dan_guesser import DanGuesser                          
+    #     guesser = DanGuesser(filename=flags.DanGuesser_filename, answer_field=flags.guesser_answer_field, min_token_df=flags.DanGuesser_min_df, max_token_df=flags.DanGuesser_max_df,
+    #                 min_answer_freq=flags.DanGuesser_min_answer_freq, embedding_dimension=flags.DanGuesser_embedding_dim,
+    #                 hidden_units=flags.DanGuesser_hidden_units, nn_dropout=flags.DanGuesser_dropout,
+    #                 grad_clipping=flags.DanGuesser_grad_clipping, unk_drop=flags.DanGuesser_unk_drop,
+    #                 batch_size=flags.DanGuesser_batch_size,
+    #                 num_epochs=flags.DanGuesser_num_epochs, num_workers=flags.DanGuesser_num_workers,
+    #                 device=device)
+    #     if load:                                                    
+    #         guesser.load()                                          
     if guesser_type == "PresidentGuesser":
         from president_guesser import PresidentGuesser        
         from president_guesser import training_data
@@ -193,5 +194,17 @@ def load_buzzer(flags, load=False):
         if ff == "Length":
             from features import LengthFeature
             feature = LengthFeature(ff)
+            buzzer.add_feature(feature)
+        if ff == "Frequency":
+            from features import FrequencyFeature
+            feature = FrequencyFeature(ff)
+            buzzer.add_feature(feature)
+        if ff == "GuessBlank":
+            from features import GuessBlankFeature
+            feature = GuessBlankFeature(ff)
+            buzzer.add_feature(feature)
+        if ff == "WikiScore":
+            from features import WikipediaFeature
+            feature = WikipediaFeature(ff)
             buzzer.add_feature(feature)
     return buzzer
