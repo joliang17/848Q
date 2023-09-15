@@ -19,6 +19,9 @@ from guesser import add_guesser_params
 from features import LengthFeature
 from params import add_buzzer_params, add_question_params, load_guesser, load_buzzer, load_questions, add_general_params, setup_logging
 
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+
 def normalize_answer(answer):
     """
     Remove superflous components to create a normalized form of an answer that
@@ -148,7 +151,7 @@ class Buzzer:
         self._feature_generators.append(feature_extractor)
         logging.info("Adding feature %s" % feature_extractor.name)
         
-    def featurize(self, question, run_text, guess_history, guesses=None):
+    def featurize(self, question, run_text, guess_history, q_id, guesses=None):
         """
         Turn a question's run into features.
 
@@ -180,7 +183,7 @@ class Buzzer:
             for feat, val in ff(question, run_text, guess):
                 features["%s_%s" % (ff.name, feat)] = val
 
-        return guess, features
+        return guess, features, q_id
 
     def finalize(self):
         """
@@ -234,17 +237,28 @@ class Buzzer:
         num_runs = len(self._runs)
 
         logging.info("Generating all features")
-        for question_index in tqdm(range(num_runs)):
-            question_guesses = dict((x, all_guesses[x][question_index]) for x in self._guessers)
-            guess_history = defaultdict(dict)
-            for guesser in question_guesses:
-                guess_history[guesser] = dict((time, guess[:history_depth]) for time, guess in enumerate(all_guesses[guesser]) if time < question_index and time > question_index - history_length)
+        executor = ThreadPoolExecutor(max_workers=5)
+        all_task = [executor.submit(self.featurize, self._questions[question_index], self._runs[question_index], dict((x, all_guesses[x][question_index]) for x in self._guessers), question_index) for question_index in range(num_runs)]
+        
+        for future in tqdm(as_completed(all_task), total=num_runs):
+            # retrieve the result
+            guess, features, question_index = future.result()
 
-            # print(guess_history)
             question = self._questions[question_index]
             run = self._runs[question_index]
             answer = self._answers[question_index]
-            guess, features = self.featurize(question, run, question_guesses)
+
+            # for question_index in tqdm(range(num_runs)):
+            #     question_guesses = dict((x, all_guesses[x][question_index]) for x in self._guessers)
+            #     guess_history = defaultdict(dict)
+            #     for guesser in question_guesses:
+            #         guess_history[guesser] = dict((time, guess[:history_depth]) for time, guess in enumerate(all_guesses[guesser]) if time < question_index and time > question_index - history_length)
+
+            # # print(guess_history)
+            # question = self._questions[question_index]
+            # run = self._runs[question_index]
+            # answer = self._answers[question_index]
+            # guess, features = self.featurize(question, run, question_guesses)
             
             self._features.append(features)
             self._metadata.append({"guess": guess, "answer": answer, "id": question["qanta_id"], "text": run})
@@ -293,7 +307,7 @@ class Buzzer:
         assert len(self._features) == len(self._questions), "Features not built.  Did you run build_features?"
         X = self._featurizer.transform(self._features)
 
-        return self._classifier.predict(X), X, self._features, self._correct, self._metadata
+        return self._classifier.predict(X), self._classifier.predict_proba(X), X, self._features, self._correct, self._metadata
     
     def load(self):
         """

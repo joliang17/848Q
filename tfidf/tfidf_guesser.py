@@ -55,7 +55,7 @@ class TfidfGuesser(Guesser):
 
         # You'll need add the vectorizer here and replace this fake vectorizer
         stop = list(stopwords.words('english'))
-        self.tfidf_vectorizer = TfidfVectorizer(min_df=min_df, max_df=max_df, stop_words=stop, sublinear_tf=True)
+        self.tfidf_vectorizer = TfidfVectorizer(min_df=min_df, max_df=max_df, stop_words=stop, sublinear_tf=True, ngram_range=(1,2))
         # self.tfidf_vectorizer = TfidfVectorizer(min_df=min_df, max_df=max_df, stop_words='english')
         self.tfidf = None 
         self.questions = None
@@ -127,57 +127,57 @@ class TfidfGuesser(Guesser):
             guesses.append(guess)
         return guesses
 
-    def batch_guess(self, questions, max_n_guesses, block_size=1024):
-        """
-        The batch_guess function allows you to find the search
-        results for multiple questions at once.  This is more efficient
-        than running the retriever for each question, finding the
-        largest elements, and returning them individually.  
+    # def batch_guess(self, questions, max_n_guesses, block_size=1024):
+    #     """
+    #     The batch_guess function allows you to find the search
+    #     results for multiple questions at once.  This is more efficient
+    #     than running the retriever for each question, finding the
+    #     largest elements, and returning them individually.  
 
-        To understand why, remember that the similarity operation for an
-        individual query and the corpus is a dot product, but if we do
-        this as a big matrix, we can fit all of the documents at once
-        and then compute the matrix as a parallelizable matrix
-        multiplication.
+    #     To understand why, remember that the similarity operation for an
+    #     individual query and the corpus is a dot product, but if we do
+    #     this as a big matrix, we can fit all of the documents at once
+    #     and then compute the matrix as a parallelizable matrix
+    #     multiplication.
 
-        The most complicated part is sorting the resulting similarities,
-        which is a good use of the argpartition function from numpy.
-        """
+    #     The most complicated part is sorting the resulting similarities,
+    #     which is a good use of the argpartition function from numpy.
+    #     """
 
-        # IMPORTANT NOTE FOR HOMEWORK: you do not need to complete
-        # batch_guess.  If you're having trouble with this, just
-        # delete the function, and the parent class will emulate the
-        # functionality one row at a time.
+    #     # IMPORTANT NOTE FOR HOMEWORK: you do not need to complete
+    #     # batch_guess.  If you're having trouble with this, just
+    #     # delete the function, and the parent class will emulate the
+    #     # functionality one row at a time.
         
-        from math import floor
+    #     from math import floor
     
-        all_guesses = []
+    #     all_guesses = []
 
-        logging.info("Querying matrix of size %i with block size %i" %
-                     (len(questions), block_size))
+    #     logging.info("Querying matrix of size %i with block size %i" %
+    #                  (len(questions), block_size))
 
-        # The next line of code is bogus, this needs to be fixed
-        # to give you a real answer.
-        top_hits = np.array([list(range(max_n_guesses-1, -1, -1))]*block_size)
-        for start in tqdm(range(0, len(questions), block_size)):
-            stop = start+block_size
-            block = questions[start:stop]
-            logging.info("Block %i to %i (%i elements)" % (start, stop, len(block)))
+    #     # The next line of code is bogus, this needs to be fixed
+    #     # to give you a real answer.
+    #     top_hits = np.array([list(range(max_n_guesses-1, -1, -1))]*block_size)
+    #     for start in tqdm(range(0, len(questions), block_size)):
+    #         stop = start+block_size
+    #         block = questions[start:stop]
+    #         logging.info("Block %i to %i (%i elements)" % (start, stop, len(block)))
             
-            blocks_tfidf = self.tfidf_vectorizer.transform(block)
-            cos_sim = cosine_similarity(blocks_tfidf, self.tfidf)
-            cos_sim_idx = np.argsort(cos_sim, axis=-1)[:, ::-1]
-            top_hits = cos_sim_idx[:, :max_n_guesses]
+    #         blocks_tfidf = self.tfidf_vectorizer.transform(block)
+    #         cos_sim = cosine_similarity(blocks_tfidf, self.tfidf)
+    #         cos_sim_idx = np.argsort(cos_sim, axis=-1)[:, ::-1]
+    #         top_hits = cos_sim_idx[:, :max_n_guesses]
 
-            for question in range(len(block)):
-                guesses = []
-                for idx in list(top_hits[question]):
-                    score = cos_sim[question, idx]
-                    guesses.append({"guess": self.answers[idx], "confidence": score, "question": self.questions[idx]})
-                all_guesses.append(guesses)
+    #         for question in range(len(block)):
+    #             guesses = []
+    #             for idx in list(top_hits[question]):
+    #                 score = cos_sim[question, idx]
+    #                 guesses.append({"guess": self.answers[idx], "confidence": score, "question": self.questions[idx]})
+    #             all_guesses.append(guesses)
 
-        assert len(all_guesses) == len(questions), "Guesses (%i) != questions (%i)" % (len(all_guesses), len(questions))
-        return all_guesses
+    #     assert len(all_guesses) == len(questions), "Guesses (%i) != questions (%i)" % (len(all_guesses), len(questions))
+    #     return all_guesses
     
     def load(self):
         """

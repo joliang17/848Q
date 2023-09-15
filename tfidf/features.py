@@ -9,6 +9,9 @@ from math import log
 from sklearn.metrics.pairwise import linear_kernel
 import gzip
 import json
+import nltk
+from nltk.corpus import wordnet
+nltk.download('wordnet')
 
 class Feature:
     """
@@ -65,6 +68,25 @@ class FrequencyFeature:
     def __call__(self, question, run, guess):
         yield ("guess", log(1 + self.counts[self.normalize(guess)]))
 
+
+class GuessinQuestionFeature(Feature):
+    """
+    Is guess included in the question?
+    """
+    def __init__(self, name):
+        self.name = name
+        from buzzer import normalize_answer
+        self.normalize = normalize_answer
+
+    def __call__(self, question, run, guess):
+        norm_guess = self.normalize(guess)
+        guess_word = norm_guess.split(' ')
+        q_word = run.split(' ')
+        len_interact = len(set(q_word).intersection(set(guess_word)))
+        prop_interact = len_interact/len(guess_word)
+        yield ('guessinq', prop_interact)
+
+
 class GuessBlankFeature(Feature):
     """
     Is guess blank?
@@ -94,54 +116,16 @@ class WikipediaFeature(Feature):
         from buzzer import normalize_answer
         self.normalize = normalize_answer
         self.name = name
-        self.matches = 10
-
-        # self.train_save()
-        self.load()
-
-    def load(self):
-        import pickle
-        path = 'models/WikiVectors'
-        with open("%s.vectorizer.pkl" % path, 'rb') as f:
-            self.vec = pickle.load(f)
-        
-        with open("%s.tfidf.pkl" % path, 'rb') as f:
-            self.docs = pickle.load(f)
-
-        with open("%s.wiki_text.pkl" % path, 'rb') as f:
-            self.wiki_text = pickle.load(f)
-
-        with open("%s.wiki_docs.pkl" % path, 'rb') as f:
-            self.doc_names = pickle.load(f)
-
-    def train_save(self):
         from sklearn.feature_extraction.text import TfidfVectorizer
-        with open('../data/wiki_page_text.json', 'r') as f:
+        with open('./data/wiki_page_text.json', 'r') as f:
         # with open('/home/neal/nlp-hw/feateng/data/wiki_page_text.json', 'r') as f:
             wiki = json.load(f)
         self.vec = TfidfVectorizer()
-
         wiki = [p for p in wiki if p is not None and p['page'] is not None and p['text'] is not None]
         self.doc_names = [self.normalize(clean(p['page'])) for p in wiki]
-        self.wiki_text = [clean(p['text']) for p in wiki]
-        self.docs = self.vec.fit_transform(self.wiki_text)
+        self.docs = self.vec.fit_transform([clean(p['text']) for p in wiki])
 
-        import pickle
-        import os
-        path = 'models/WikiVectors'
-        os.makedirs(path, exist_ok=True)
-        with open("%s.vectorizer.pkl" % path, 'wb') as f:
-            pickle.dump(self.vec, f)
-        
-        with open("%s.tfidf.pkl" % path, 'wb') as f:
-            pickle.dump(self.docs, f)
-
-        with open("%s.wiki_text.pkl" % path, 'wb') as f:
-            pickle.dump(self.wiki_text, f)
-
-        with open("%s.wiki_docs.pkl" % path, 'wb') as f:
-            pickle.dump(self.doc_names, f)
-
+        self.matches = 10
 
     def __call__(self, question, run, guess):
         norm_guess = self.normalize(guess)
