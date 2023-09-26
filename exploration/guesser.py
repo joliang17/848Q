@@ -244,4 +244,8 @@ if __name__ == "__main__":
             dev_exs = load_questions(flags, secondary=True)
             guesser.set_eval_data(dev_exs)
             guesser.train_dan()
+        # GPT Guesser
+        if flags.guesser_type == "GprGuesser":
+            for q in questions:
+                guesser(q['text'])
         guesser.save()
