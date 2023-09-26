@@ -9,15 +9,16 @@ from json import JSONDecodeError
 from tqdm import tqdm
 import logging
 
-
-
 from baseconv import BaseConverter
-
-
 
 kCACHE_MISS = "CACHE_MISS"
 from nltk.corpus import stopwords
 from guesser import alphanum
+
+# GPT settings
+import os
+import openai
+openai.api_key = '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'
 
 class GprGuesser(Guesser):
     """
@@ -46,6 +47,10 @@ class GprGuesser(Guesser):
         self.shard_prefix_length = shard_prefix_length
         self.shard_converter = BaseConverter(shard_vocab)
 
+        # GPT settings
+        self.model = "text-davinci-003"
+        self.max_token = 50
+
     def clean_for_shard(self, query):
         words = alphanum.split(query.lower())
         nospace = "".join(x for x in words if not x in self.stopwords)
@@ -70,9 +75,6 @@ class GprGuesser(Guesser):
 
         return shard
 
-              
-
-
     def __call__(self, question, n_guesses=1):
         """
         Generate a guess, but grab from the cache first if it's available
@@ -82,16 +84,36 @@ class GprGuesser(Guesser):
         
         # Check the cache, return it from there if we have it
         if question not in self.cache:
-            result = None
-            while result is None:
-                    result = kCACHE_MISS
-                    print("No cache found for: |%s|" % question)                                
+            # TODO: call openai api here
+            # result: [{"guess": "?", "confidence": 0.0}]
+            # prompt = f"Question answering:\nQuestion: {question}"
+            prompt = f"Quiz Bowl:\nQuestion: {question}"
+
+            # # #######################
+            # # # GPT3
+            # self.model = 'gpt-3.5-turbo'
+            # response = openai.ChatCompletion.create(model=self.model, n=n_guesses, messages=[{"role": "system", "content": ''}, {"role": "user", "content": prompt}])
+
+            #######################
+            # Other
+            response = openai.Completion.create(engine=self.model, prompt=prompt, max_tokens=self.max_token, best_of=n_guesses, n=n_guesses)
+            selected_resp = response.choices[:n_guesses]
+            if len(selected_resp) == 0:
+                result = kCACHE_MISS
+                print("No cache found for: |%s|" % question)    
+            else:
+                result = []
+                for choc in selected_resp:
+                    # TODO: Where to get confidence score
+                    generated_text = choc.text.replace("Answer: ", '').strip()
+                    result.append({"guess": generated_text, "confidence": 1.0})
                     
             if result != kCACHE_MISS:
                 self.cache[question] = result
 
         if question in self.cache:
             return [self.cache[question]]
+        
         else:  # If we get here, this means that we couldn't query GPT and it's not cached
             assert result == kCACHE_MISS
             return [{"guess": "", "confidence": 0.0}]
