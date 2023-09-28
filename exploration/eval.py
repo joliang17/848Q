@@ -205,7 +205,7 @@ if __name__ == "__main__":
         
     if flags.evaluate == "buzzer":
         print(buzzer._classifier.coef_)
-        for weight, feature in zip(buzzer._classifier.coef_[1], buzzer._featurizer.feature_names_):
+        for weight, feature in zip(buzzer._classifier.coef_[0], buzzer._featurizer.feature_names_):
             print("%40s: %0.4f" % (feature.strip(), weight))
         
         acc = (outcomes["best"] + outcomes["waiting"]) / total

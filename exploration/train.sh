@@ -23,15 +23,16 @@ buzzer_size=500
 #####################
 # train buzzer
 
-# # gpt cache guesser
-# python3 buzzer.py \
-#     --guesser_type=GprGuesser \
-#     --limit=${buzzer_size}  \
-#     --question_source=gzjson \
-#     --GprGuesser_filename=../models/gpt_cache.tar.gz \
-#     --questions=../data/qanta.buzztrain.json.gz \
-#     --run_length=100 \
-#     --buzzer_guessers GprGuesser TfidfGuesser
+# gpt cache guesser
+python3 buzzer.py \
+    --guesser_type=GprGuesser \
+    --limit=${buzzer_size}  \
+    --question_source=gzjson \
+    --GprGuesser_filename=../models/gpt_cache.tar.gz \
+    --questions=../data/qanta.buzztrain.json.gz \
+    --run_length=100 \
+    --features Length WikiScore \
+    --buzzer_guessers GprGuesser TfidfGuesser
 
 # eval buzzer
 python3 eval.py \
@@ -40,4 +41,5 @@ python3 eval.py \
     --questions=../data/qanta.buzzdev.json.gz \
     --limit=500 \
     --GprGuesser_filename=../models/gpt_cache.tar.gz \
+    --features Length WikiScore \
     --buzzer_guessers GprGuesser TfidfGuesser

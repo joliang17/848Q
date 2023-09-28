@@ -1,0 +1,2672 @@
+waiting 0.74
+===================
+               guess: Jürgen Habermas
+              answer: The_Phenomenology_of_Spirit
+                  id: 101979
+GprGuesser_confidence: -5.0029
+TfidfGuesser_confidence: 0.2008
+         Length_word: 3.5835
+        Length_guess: 2.7726
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: A work titled The Future of this book's author argues that its
+                      "plastic" thought easily allows for the theory of temporality to be
+                      applied to European philosophy - that dissertation on this book is by
+           buzz_prob: 0.1530
+--------------------
+               guess: Abstract expressionism
+              answer: Photorealism
+                  id: 101994
+GprGuesser_confidence: -9.6901
+TfidfGuesser_confidence: 0.1730
+         Length_word: 4.8520
+        Length_guess: 3.1355
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: Members of this movement produced paintings capturing their
+                      impressions as tourists in the "Prague Project." The desert, sea waves
+                      and lunar craters are the subject of texture paintings by this
+                      movement's Latvian member, Vija Celmins. A female artist from this
+                      movement created vanitas paintings, such as one that juxtaposes an
+                      hourglass, a candle, and a calendar titled Wheel of Fortune. Another
+                      artist from this movement captured the activity of a city in a
+                      painting in which the title structures reflect the action, called
+                      Telephone Booths. An artist from this movement worked in a wheelchair
+                      with a paintbrush strapped to his wrist, after he became quadriplegic.
+                      This movement included Audrey Flack, Richard Estes, and an artist who
+                      painted grids of tiles filled with shapes which, viewed from afar,
+           buzz_prob: 0.2666
+--------------------
+               guess: The Post
+              answer: Chikamatsu_Monzaemon
+                  id: 93336
+GprGuesser_confidence: -12.1428
+TfidfGuesser_confidence: 0.1824
+         Length_word: 2.9957
+        Length_guess: 2.1972
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: One of this author's plays starts in a post office which blames delays
+                      on the rain, though in reality
+           buzz_prob: 0.0802
+--------------------
+               guess: Hyperbolas
+              answer: Spherical_Harmonics
+                  id: 102406
+GprGuesser_confidence: -8.4402
+TfidfGuesser_confidence: 0.1963
+         Length_word: 4.8675
+        Length_guess: 2.3979
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: The Wigner D-matrices can be expanded simply in terms of these
+                      functions. The fact that the sum of the squares of a subset of these
+                      functions equals a constant is used to prove Unsold's theorem.
+                      Applying the spin-raising operator to these functions yields their
+                      "spin-weighted" counterparts. Multiplying these functions by a factor
+                      of "r raised to the l" yields their "solid" counterparts. The simplest
+                      of these functions equals one over the square root of 4 pi. These
+                      functions of two variables can be reduced to functions of one variable
+                      by converting them to their associated Legendre polynomials. They are
+                      the eigenfunctions of the operators for the z-component of angular
+                      momentum and the square of angular momentum. The angular portion of
+                      the wavefunction of the hydrogen atom consists of these
+           buzz_prob: 0.3096
+--------------------
+               guess: Yellowstone National Park
+              answer: Denali_National_Park_and_Preserve
+                  id: 101993
+GprGuesser_confidence: -9.4439
+TfidfGuesser_confidence: 0.1558
+         Length_word: 4.6250
+        Length_guess: 3.2581
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: Several sites at this national park, including its science and
+                      learning center, are named in honor of the biologist Adolph Murie,
+                      while the newly-built visitor center is dedicated to the pilot Ben
+                      Eielson. During a trip called the "Voyage of Understanding," Warren G.
+                      Harding rode in a railroad car named for this national park, which was
+                      established through a bill introduced in Congress by James Wickersham
+                      at the urging of Charles Sheldon. This park is home to the mosquito-
+                      infested Wonder Lake, as well as the Foraker River and the Toklat
+                      River, which winds its way west of the Kantishna Hills. Sightings
+           buzz_prob: 0.2192
+--------------------
+               guess: Russia
+              answer: Menelik_II
+                  id: 93276
+GprGuesser_confidence: -11.4487
+TfidfGuesser_confidence: 0.1451
+         Length_word: 3.8067
+        Length_guess: 1.9459
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0371
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.0551
+                text: Two books about exploring this ruler's domain were written by Russian
+                      Red Cross volunteer Alexander Bulatovich as the also-Russian officer
+                      Nikolay Leontiev was giving this ruler military advice and artillery
+                      supplies. This man's queen Taitu became effective regent after a
+                      series of strokes paralyzed
+           buzz_prob: 0.3631
+--------------------
+               guess: John Stuart Mill
+              answer: Donald_Davidson_(philosopher)
+                  id: 102372
+GprGuesser_confidence: -10.2838
+TfidfGuesser_confidence: 0.1244
+         Length_word: 4.6444
+        Length_guess: 2.8332
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0433
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: This philosopher distinguished between "all-things-considered" and
+                      "unconditional" types of judgment to solve the problem of
+                      incontinence. In a different paper, this philosopher used the example
+                      of someone sinking the Bismarck to illustrate the Principle of Causal
+                      Interaction. In another paper, this philosopher argued that
+                      rationalizations were causal explanations for actions. This author of
+                      "How is Weakness of the Will Possible?" and "Actions, Reasons, and
+                      Causes" argued for token identity theory in a paper that states that
+                      there are no strict deterministic laws that allow for the prediction
+                      of mental states from physical states. He proposed a theory of
+                      understanding an unknown language works
+           buzz_prob: 0.2058
+--------------------
+               guess: Scanning tunneling microscope
+              answer: Microscope
+                  id: 141355
+GprGuesser_confidence: -6.4922
+TfidfGuesser_confidence: 0.1989
+         Length_word: 2.9957
+        Length_guess: 3.4012
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: One type of these devices can run in a constant height or constant
+                      current mode, and functions by creating
+           buzz_prob: 0.0933
+--------------------
+               guess: Franz Kafka
+              answer: Juan_Rulfo
+                  id: 102239
+GprGuesser_confidence: -9.7234
+TfidfGuesser_confidence: 0.1783
+         Length_word: 3.9890
+        Length_guess: 2.4849
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0307
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: A collection by this author that was first translated into English by
+                      Georg D. Schade includes a story in which the narrator and his sick
+                      brother's wife Natalia arrange the brother's death during a pilgrimage
+                      to a shrine at the title place. The narrator of one of this author's
+                      short stories worries that
+           buzz_prob: 0.1630
+--------------------
+               guess: Romulus
+              answer: Hohenstaufen
+                  id: 93250
+GprGuesser_confidence: -9.5703
+TfidfGuesser_confidence: 0.2150
+         Length_word: 4.4886
+        Length_guess: 2.0794
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0366
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: A member of this family forced magistrates of a captured city to draw
+                      a fig from a donkey's anus with their teeth. Another ruler from this
+                      family issued a legal code for an island in the Constitutions of
+                      Melfi, and signed a peace with Al-Kamil for control of Jerusalem. The
+                      founder of this dynasty, which succeeded the House of SupplinbÃ¼rg,
+                      faced a sacred war wagon called the Carroccio in one battle. That
+                      founder suppressed the Commune of Rome and its leader Arnold of
+                      Brescia, beat the Seljuks at
+           buzz_prob: 0.2660
+--------------------
+               guess: Tin
+              answer: Nitrile
+                  id: 102385
+GprGuesser_confidence: -11.0816
+TfidfGuesser_confidence: 0.3144
+         Length_word: 2.8332
+        Length_guess: 1.3863
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: These compounds can be synthesized using Nagata's reagent. Reaction of
+                      one of these compounds with tin
+           buzz_prob: 0.1329
+--------------------
+               guess: Jazz guitar
+              answer: Electric_guitar
+                  id: 102340
+GprGuesser_confidence: -10.2873
+TfidfGuesser_confidence: 0.2245
+         Length_word: 4.6347
+        Length_guess: 2.4849
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: An album named for the "genius" of this instrument features solos for
+                      it on songs such as "Seven Come Eleven" and "Solo Flight." In 1947,
+                      Sister Rosetta Tharpe switched to playing this instrument while
+                      performing hit gospel songs like "Up Above My Head." Eddie Durham is
+                      credited with being the first jazz musician to record using this
+                      instrument, which John McLaughlin played on the Miles Davis albums In
+                      a Silent Way and Bitches Brew. Another performer of this instrument
+                      played it alongside his wife Mary Ford on hits like "How High the
+                      Moon." This instrument was played by Charlie Christian and Wes
+           buzz_prob: 0.2848
+--------------------
+               guess: Moon
+              answer: Paul_Laurence_Dunbar
+                  id: 101950
+GprGuesser_confidence: -11.3062
+TfidfGuesser_confidence: 0.1804
+         Length_word: 3.7377
+        Length_guess: 1.6094
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0082
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: The voice of one of this poet's speakers "falls dead a foot from [his]
+                      own lips" as he cries out to a vessel. The speaker of that poem looks
+                      "far out into the pregnant night," where he can "hear a solemn
+           buzz_prob: 0.1284
+--------------------
+               guess: The Bible
+              answer: Metaphysics
+                  id: 93201
+GprGuesser_confidence: -9.5515
+TfidfGuesser_confidence: 0.2113
+         Length_word: 2.9957
+        Length_guess: 2.3026
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: The seventh book of this text claims that the phrase "pale man" is not
+                      a unified definition of anything,
+           buzz_prob: 0.0967
+--------------------
+               guess: Cholesterol
+              answer: Translation
+                  id: 93485
+GprGuesser_confidence: -10.3949
+TfidfGuesser_confidence: 0.2462
+         Length_word: 3.0910
+        Length_guess: 2.4849
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0456
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: An enzyme active in this process is coded by the TARS gene. A mutation
+                      in a gene for a molecule active
+           buzz_prob: 0.1206
+--------------------
+               guess: Magnetization
+              answer: Electric_Current
+                  id: 102094
+GprGuesser_confidence: -10.9315
+TfidfGuesser_confidence: 0.1449
+         Length_word: 4.4067
+        Length_guess: 2.6391
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: An increase in this quantity can improve the mobility of graphene
+                      devices to clean them through "annealing." Free layers are aligned in
+                      a stationary state along their hard axis by the "clocking" value of
+                      this quantity, whose "switching" magnitude causes the NOT gate of a
+                      free layer to reverse from 0 to 1 in a magnetic tunnel junction. Spin-
+                      transfer torque is generated by the polarization of this quantity.
+                      This quantity is amplified via secondary emission in a photomultiplier
+                      tube. The sensitivity
+           buzz_prob: 0.1833
+--------------------
+               guess: Saveri
+              answer: Durga
+                  id: 101984
+GprGuesser_confidence: -11.6487
+TfidfGuesser_confidence: 0.1979
+         Length_word: 3.5835
+        Length_guess: 1.9459
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: This deity is celebrated at a festival in which men place barley seeds
+                      on their caps or behind their ears. The Hindustani equivalent of the
+                      pentatonic ragam Shudhha Saveri is named for this deity. Guru
+           buzz_prob: 0.1331
+--------------------
+               guess: The University of California, Berkeley
+              answer: Columbia_University
+                  id: 102349
+GprGuesser_confidence: -4.8110
+TfidfGuesser_confidence: 0.1587
+         Length_word: 4.0604
+        Length_guess: 3.6636
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: Disturbances at this location were investigated by the Cox Commission,
+                      headed by special investigator Archibald Cox. An administrator of this
+                      place, Herbert Deane, made a dismissive comment about a preference for
+                      strawberries, which provided the title for James Simon Kunen's The
+                      Strawberry Statement. The revelation that this university conducted
+                      research for the Institute for Defense Analyses provoked
+           buzz_prob: 0.1700
+--------------------
+               guess: Pulsar
+              answer: Jan_Oort
+                  id: 102117
+GprGuesser_confidence: -9.8814
+TfidfGuesser_confidence: 0.3605
+         Length_word: 2.9444
+        Length_guess: 1.9459
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0444
+WikiScore_guess_rank_rel_fs: 3
+WikiScore_guess_sim_rel_fs: 0.0444
+                text: With Theodore Walraven, this scientist proved that the light of the
+                      Crab Nebula was polarized by an incredibly
+           buzz_prob: 0.4376
+--------------------
+               guess: Pierre-Simon Laplace
+              answer: Siméon_Denis_Poisson
+                  id: 102153
+GprGuesser_confidence: -7.6281
+TfidfGuesser_confidence: 0.1488
+         Length_word: 5.0304
+        Length_guess: 3.0445
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: Differential forms on a manifold named for this scientist form a
+                      Gerstenhaber algebra. This scientist's namesake algebra is an
+                      associative algebra over a field with a bilinear operation which is
+                      antisymmetric and obeys the Leibniz rule and the Jacobi identity. This
+                      scientist names an operation which is the inverse of a similar
+                      operation named for Lagrange, is invariant under canonical
+                      transformations, and is used to determine the time evolution of phase
+                      space functions according to Liouville's theorem. Auxetic materials
+                      have a negative value for a quantity named for this man which is
+                      defined as minus the ratio of transverse strain to axial strain. This
+                      man names an inhomogeneous equation whose uniqueness theorem can be
+                      used to develop the method of images. For 10 points, name this
+                      scientist who names an inhomogeneous version of the Laplace equation
+                      which states that the Laplacian of the electric potential equals the
+                      charge density divided by epsilon-naught.
+           buzz_prob: 0.2868
+--------------------
+               guess: Erichthonius
+              answer: Cecrops_I
+                  id: 102052
+GprGuesser_confidence: -7.0970
+TfidfGuesser_confidence: 0.1865
+         Length_word: 4.7622
+        Length_guess: 2.5649
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: Antoninus Liberalis reports that Periphas, and not this man, was the
+                      first to have his unusual manner of birth. Polydore Vergil claims that
+                      this man raised the child who invented the quadriga. He introduced a
+                      new method of worshipping the gods in which cakes, rather than bloody
+                      animal sacrifices, were used as offerings. Some sources state he
+                      founded the towns of Tetrapolis, Epakria and Eleusis, and that he was
+                      a son of Pandion. In another story, this man's daughters Herse,
+                      Pandrosus, and Aglaurus opened a box, shrieked, and threw themselves
+                      off of a cliff, because they found this man's successor Erichthonius
+                      inside. This king judged a contest in which one of the participants
+                      planted an olive
+           buzz_prob: 0.2892
+--------------------
+               guess: Gustave Flaubert
+              answer: Anatole_France
+                  id: 93256
+GprGuesser_confidence: -7.9068
+TfidfGuesser_confidence: 0.2104
+         Length_word: 4.6634
+        Length_guess: 2.8332
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0178
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: A character created by this man owns a cat named Hamilcar and is
+                      ultimately rewarded with a rare manuscript for his kindness in giving
+                      some firewood to his freezing neighbors. In a satirical novel by this
+                      author, a fake dragon designed in part by Orberosia is killed by
+                      Kraken, after which those two become king and queen of a civilization
+                      which progresses through all the stages of history. Marcel Proust's
+                      literary mentor, Bergotte, was modeled on this author, who created a
+                      man who removes Jeanne from a cruel school and pays her dowry by
+                      selling his library. In another novel by this man, the Devil
+           buzz_prob: 0.2715
+--------------------
+               guess: Mongols
+              answer: Manjū
+                  id: 93282
+GprGuesser_confidence: -10.9685
+TfidfGuesser_confidence: 0.1444
+         Length_word: 4.6444
+        Length_guess: 2.0794
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: Because a dog saved this ethnic group's founding father, it upholds a
+                      taboo on using dog fur or eating dog meat to this day. It's not the
+                      French, but famille rose and famille verte enamel pottery emerged
+                      under this ethnic group's rule, for which Giuseppe Castiglione helped
+                      build a palace. These winners of the Battle of Sarhu included Bordered
+                      Yellow and Plain White among the divisions of their armies in the
+                      Eight Banners system. This group used Latin to write a treaty with
+                      Russia signed at Nerchinsk, rose to prominence under Nurhachi, and won
+                      at Shanhai Pass against Li Zicheng. This Tungusic ethnicity
+           buzz_prob: 0.2192
+--------------------
+               guess: The Eumenides
+              answer: Oresteia
+                  id: 93244
+GprGuesser_confidence: -8.0817
+TfidfGuesser_confidence: 0.2740
+         Length_word: 4.9698
+        Length_guess: 2.6391
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: After a character in this play escapes from a temple thanks to a
+                      sleeping spell, he claims to have been purified by the sacrifice of a
+                      pig. According to legend, the premiere of this play was so disturbing
+                      that a pregnant woman collapsed and died. A male criminal's footsteps
+                      are said to be filled with blood in this play, in which a judge is
+                      impressed by a defendant's unusual willingness to take responsibility
+                      for his actions. After placing a character under the protection of
+                      Hermes, another god in this play argues that mothers are merely
+                      vessels and not truly parents. In this play, Apollo argues in a trial
+                      decided by the vote of Athena, who promotes an ethic of justice to the
+                      Furies and gives them the title new name, meaning "kindly ones." For
+                      10 points, name this final play of Aeschylus's Oresteia.
+           buzz_prob: 0.4076
+--------------------
+               guess: The sculpture of a unicorn encased in
+              answer: Dream
+                  id: 93432
+GprGuesser_confidence: -5.9241
+TfidfGuesser_confidence: 0.1472
+         Length_word: 4.6728
+        Length_guess: 3.6376
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: A Damien Hirst sculpture with this name consists of a unicorn encased
+                      in formaldehyde. A crowd of marble-like warriors from the tale of
+                      Fingal appear in the air above a mythological bard leaning on his harp
+                      in a Jean-Dominique Ingres artwork titled for one of these events
+                      involving Ossian. A sculpture of Jupiter's head sits beside two
+                      pineapples and bunches of bananas in Giorgio de Chirico's depiction of
+                      a "transformed" one of these. Another of these events names a painting
+                      in which Gala lies naked on a slab of rock next to a piece of fruit
+                      that casts a heart-shaped shadow, as an orange fish, two
+           buzz_prob: 0.2335
+--------------------
+               guess: The House of the Spirits by Pablo Ner
+              answer: Juan_Rulfo
+                  id: 102239
+GprGuesser_confidence: -5.5347
+TfidfGuesser_confidence: 0.1799
+         Length_word: 3.5835
+        Length_guess: 3.6376
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: A collection by this author that was first translated into English by
+                      Georg D. Schade includes a story in which the narrator and his sick
+                      brother's wife Natalia arrange the brother's death during a pilgrimage
+           buzz_prob: 0.1318
+--------------------
+               guess: Diffraction
+              answer: Spin–spin_relaxation
+                  id: 102064
+GprGuesser_confidence: -9.9540
+TfidfGuesser_confidence: 0.1550
+         Length_word: 3.8067
+        Length_guess: 2.4849
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0607
+WikiScore_guess_rank_rel_fs: 2
+WikiScore_guess_sim_rel_fs: 0.0607
+                text: Bloch, Wangsness, and Redfield developed a rigorous quantum mechanical
+                      model of this phenomenon. Two different mech- anisms causing this
+                      phenomenon cancel each other out in a TROSY experiment. This
+                      phenomenon causes intensity losses between pulses in an INEPT
+                      sequence. This process can be mathematically
+           buzz_prob: 0.4007
+--------------------
+               guess: Inanna
+              answer: Ullikummi
+                  id: 102290
+GprGuesser_confidence: -9.1271
+TfidfGuesser_confidence: 0.2273
+         Length_word: 2.9957
+        Length_guess: 1.9459
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: A love goddess descends from heaven and tries to charm this figure,
+                      but an oceanic wave tells her that
+           buzz_prob: 0.1069
+--------------------
+               guess: the old woman in Victor Hugo's novel
+              answer: The_Lictors_Bring_to_Brutus_the_Bodies_of_His_Sons
+                  id: 102088
+GprGuesser_confidence: -4.8959
+TfidfGuesser_confidence: 0.1866
+         Length_word: 2.8904
+        Length_guess: 3.6109
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: Thomas Crow's Emulation discusses why the weeping woman on the far-
+                      right of this artwork is modeled on
+           buzz_prob: 0.0849
+--------------------
+               guess: Ester
+              answer: Alkyne
+                  id: 93406
+GprGuesser_confidence: -9.3363
+TfidfGuesser_confidence: 0.3109
+         Length_word: 4.7095
+        Length_guess: 1.7918
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1137
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: One reaction to prepare these compounds adds diazomethylphosphonate
+                      esters to aldehydes under basic catalysis and generates vinyl-diazo
+                      intermediates. Along with aldehydes, these compounds are the
+                      degradation products of alpha, beta-epoxy tosylhydrazones in the
+                      Eschenmoser fragmentation. A coupling involving both palladium and
+                      copper catalysis, in which these compounds react with aryl halides, is
+                      the Sonogashira reaction. These compounds react with azides to form
+                      triazole rings in a well-known click-chemistry reaction, and terminal
+                      ones can be deprotonated by sodium amide. They are reduced to cis-
+                      alkenes by the poisoned Lindlar catalyst. This functional group is
+                      composed of two sp-hybridized carbons. For 10 points, name this
+                      functional group consisting of a carbon-carbon triple bond.
+           buzz_prob: 0.4945
+--------------------
+timid 0.13
+===================
+               guess: Arkansas
+              answer: Little_Rock,_Arkansas
+                  id: 93418
+GprGuesser_confidence: -10.6812
+TfidfGuesser_confidence: 0.2540
+         Length_word: 4.8903
+        Length_guess: 2.1972
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: In "Reflections on" this city, Hannah Arendt controversially imagined
+                      what she'd do as a poor black mother here. A woman from this city
+                      wrote about being attacked by acid in her memoir Warriors Don't Cry;
+                      another memoir about this city, named for its Long Shadow, retells a
+                      plan developed by Virgil Blossom. Melba Pattillo Beals and Daisy Bates
+                      were people opposed by this city's Capital Citizens' Council. The so-
+                      called "Lost Year" in this city led to a Supreme Court ruling in
+                      Cooper v. Aaron that states must follow Supreme Court decisions even
+                      if they disagree with them. The 101st Airborne division was sent to
+                      this city by the President. For 10 points, name this city where
+                      governor Orval Faubus opposed the 1957 enrollment of nine black
+                      students to desegregate Central High School.
+           buzz_prob: 0.3596
+--------------------
+               guess: Anthills of the Savannah
+              answer: Anthills_of_the_Savannah
+                  id: 102190
+GprGuesser_confidence: -6.4305
+TfidfGuesser_confidence: 0.3744
+         Length_word: 4.4998
+        Length_guess: 3.2189
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: A character in this novel gets in trouble for putting up double-
+                      entendre signs in a hospital, such as one reading "Sodom and
+                      Gonorrhea" above the venereal ward. The dying words of a character in
+                      this novel are reported to sound like "the last grin", though another
+                      character later realizes it was a reference to the last of three green
+                      bottles, which originally appear in the house of Mad Medico. A baby
+                      girl is given a male name that means "may the path never close,"
+                      Amaechina, at a naming ceremony
+           buzz_prob: 0.4314
+--------------------
+               guess: Imre Kertész
+              answer: Imre_Kertész
+                  id: 102075
+GprGuesser_confidence: -2.4153
+TfidfGuesser_confidence: 0.1088
+         Length_word: 4.9558
+        Length_guess: 2.5649
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: One of this man's novels dubs the forces governing an authoritarian
+                      state "the logic" and is about a former secret policeman named Antonio
+                      Rojas Martens, who is on death row for his involvement in the "Salinas
+                      affair." His recurring characters include the philosopher Dr. Oblath,
+                      who waits in a publication office with Kurti and Sarah at the
+                      beginning of a play discovered by the editor Kingbitter in another of
+                      his novels. The author of that play, B., first appeared in a novel by
+                      this man in which he constantly recalls the word "no," indicating his
+                      refusal to subject a child to the suffering of the world. This author
+                      of Detective Story drew on his own life for a novel in which Gyuri
+                      Koves learns how to survive Zeitz from Bandi Citrom after earlier
+                      stops in Buchenwald and Auschwitz. For 10 points,
+           buzz_prob: 0.2781
+--------------------
+               guess: The Anarchy
+              answer: The_Anarchy
+                  id: 101962
+GprGuesser_confidence: -6.5572
+TfidfGuesser_confidence: 0.2123
+         Length_word: 4.7791
+        Length_guess: 2.4849
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: A force in this conflict was supported by Walter Espec, but he changed
+                      his mind after his nephew Jordan de Bussey was abandoned at the
+                      fortress of Wark. Another man switched sides after his property,
+                      including Walden Castle, was seized and he was arrested. That man,
+                      Geoffrey de Mandeville, may be referenced in the eyewitness account of
+                      this conflict in the Peterbor- ough Chronicle. It saw the early
+                      victory of Archbishop Thurstan at the Battle of the Standard, while
+                      Robert of Gloucester was exchanged for a captive following the Rout of
+                      Winchester. To escape a siege on Oxford castle, a certain female
+                      walked across the frozen Thames during this conflict, which ended when
+                      the Battle of Lincoln led
+           buzz_prob: 0.3217
+--------------------
+               guess: Substitution reaction.
+              answer: Substitution_reaction
+                  id: 102369
+GprGuesser_confidence: -11.0055
+TfidfGuesser_confidence: 0.2939
+         Length_word: 5.0106
+        Length_guess: 3.1355
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: The pre-equilibrium rate constant for one of these reactions is
+                      proportional to the cube of the minimum distance of the approach of
+                      the reactants times the exponential of the Coulombic potential energy
+                      of the reactants according to the Fuoss-Eigen equation. That rate
+                      constant arises from the Eigen-Wilkins mechanism, which describes this
+                      kind of reaction. In square planar complexes, the rate of this kind of
+                      reaction can be enhanced by the presence of a strong sigma donor
+                      ligand on the other side of the complex in the trans effect. This type
+                      of reaction can take place via associative or interchange mechanisms.
+                      Alcohols can be converted to tosylates to increase their reactivity in
+                      this kind of reaction. In a noted mechanism for this type of reaction,
+                      inversion of stereochemistry occurs as a nucleophile forces out a
+                      leaving group in a single step. For 10 points, name this type of
+                      reaction in
+           buzz_prob: 0.4066
+--------------------
+               guess: Jiang Zemin
+              answer: Jiang_Zemin
+                  id: 93424
+GprGuesser_confidence: -6.4226
+TfidfGuesser_confidence: 0.1543
+         Length_word: 4.8598
+        Length_guess: 2.4849
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: While a mayor, this man replied to posters quoting "All men are
+                      created equal" by reciting the whole Gettysburg Address in English to
+                      student protesters. On a tour of his country's south, this leader
+                      formed an ideology based on "productive forces," "advanced culture,"
+                      and the interest of the majority, the Three Represents. The "Shanghai
+                      clique" got power via connections to this man, who retained his
+                      predecessor's Premier, Li Peng. This key person in the Third
+                      Generation of CCP leaders came to power after Zhao Ziyang was purged
+                      as General Secretary. He began construction on the Three Gorges Dam,
+                      started the Falun Gong crackdown, and oversaw the transfers of Macau
+                      and Hong Kong. For 10 points, name this man who succeeded Deng
+                      Xiaoping to lead China during the 1990s.
+           buzz_prob: 0.2805
+--------------------
+               guess: Tamil language
+              answer: Tamil_language
+                  id: 102307
+GprGuesser_confidence: -7.4709
+TfidfGuesser_confidence: 0.1073
+         Length_word: 4.8442
+        Length_guess: 2.7081
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: Traditional love poems in this language were categorized according to
+                      five "landscapes", each named for a particular flower. In one work in
+                      this language, the protagonist pretends to circle around her murderous
+                      husband three times to worship him, but then shoves him off a hill to
+                      his death. In another work in this language, a woman cuts off one of
+                      her breasts to cast a curse that burns to the ground the city that put
+                      her husband to death on false charges. The oldest collection of
+                      religious poems in this language gave rise to a namesake meter called
+                      Paripaatal, and many works in this language are written in akaval
+                      meter. A poem about a woman who marries the thief Kaalan and a poem
+                      about the anklet
+           buzz_prob: 0.2284
+--------------------
+               guess: The Book of Isaiah
+              answer: Book_of_Isaiah
+                  id: 102097
+GprGuesser_confidence: -9.6442
+TfidfGuesser_confidence: 0.2102
+         Length_word: 4.4998
+        Length_guess: 2.9444
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0365
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: Paintings of the nativity traditionally include an ox and an ass
+                      because of this book's line "the ox knoweth his owner, and the ass his
+                      master's crib." The hymn "Beulah Land" comes from this book's
+                      declaration that Israel's name will one day be changed to Hephzibah
+                      and Beulah. Its fortieth chapter describes how "every valley shall be
+                      exalted and every mountain and hill shall be made low" in the process
+                      of building a straight highway to God. This book is the source of the
+                      idea that Israel should be
+           buzz_prob: 0.2511
+--------------------
+               guess: The Boston Police Strike
+              answer: Boston_Police_Strike
+                  id: 102208
+GprGuesser_confidence: -9.1221
+TfidfGuesser_confidence: 0.1509
+         Length_word: 3.8712
+        Length_guess: 3.2189
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: James Jackson Storrow headed a commission charged with investigating
+                      grievances prior to this event. Legislation put forth by Albert
+                      Pillsbury was a major impetus for this event, which Lawrence Lowell
+                      tried to mitigate by asking for volunteer students. The attempts of
+                      Andrew James Peters to resolve it
+           buzz_prob: 0.1332
+--------------------
+               guess: Translation
+              answer: Translation
+                  id: 93485
+GprGuesser_confidence: -10.7637
+TfidfGuesser_confidence: 0.2175
+         Length_word: 4.7875
+        Length_guess: 2.4849
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0173
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: An enzyme active in this process is coded by the TARS gene. A mutation
+                      in a gene for a molecule active in this process is the usual cause of
+                      MELAS syndrome. RRF performs its function at the end of this process.
+                      A complex central to this process exhibits relative rotation of its
+                      two subunits referred to as "ratcheting." The initiation of this
+                      process can be cap-dependent or cap-independent. In prokaryotes, steps
+                      in this process are catalyzed by EF-P and EF-Tu. In this process
+                      facilitated by elongation factors, a molecule with a cloverleaf
+                      structure binds to its target codon at the A site of the ribosome. For
+                      10 points, name this process in which tRNA synthesizes polypeptides
+                      via its interaction
+           buzz_prob: 0.2841
+--------------------
+               guess: Battle of Shrewsbury
+              answer: Battle_of_Shrewsbury
+                  id: 102113
+GprGuesser_confidence: -2.5788
+TfidfGuesser_confidence: 0.1723
+         Length_word: 5.1533
+        Length_guess: 3.0445
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: his battle occurred at a manor owned by Richard Hussey, after the
+                      local abbot Thomas Prestbury attempted to negotiate peace between the
+                      armies, and Hussey later applied for a license to build a chapel on
+                      the site in honor of the fallen soldiers. After one participant in
+                      this battle received an arrow to the skull, the physician John
+                      Bradmore is said to have poured honey into the wound and invented a
+                      pair of tongs to extract the arrow. The Earl of Stafford was killed
+                      and his right wing fled the field, under attack from archers recruited
+                      from Cheshire, while the royal standard bearer Sir Walter Blount was
+                      mistaken for the king and killed. The losing commander here had turned
+                      on the king for not ransoming his brother-in-law Edmund Mortimer, and
+                      was supported by his uncle, the Earl of Winchester, but sadly did not
+                      receive any troops from Owen Glendower. For 10 points, name this 1403
+                      battle in which Henry Percy, also known as Hotspur, was defeated by
+                      the Lancastrians under Henry IV.
+           buzz_prob: 0.3661
+--------------------
+               guess: Stellar wind
+              answer: Stellar_wind
+                  id: 93186
+GprGuesser_confidence: -9.5842
+TfidfGuesser_confidence: 0.1823
+         Length_word: 4.7875
+        Length_guess: 2.5649
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: The de Jager model for this phenomenon overpredicts it in OB-type
+                      stars. That "weak" problem with this phenomenon cannot be explained by
+                      its namesake clumping or by the broadening of P Cygni profiles, which
+                      is indicative of line-driving processes causing this phenomenon. Some
+                      luminous blue variables, like Eta Carinae, exhibit bubbles named after
+                      this phenomenon. Other stars that exhibit this phenomenon lose their
+                      nitrogen lines as it occurs, resulting in a transition from WN to WC
+                      classification; those are Wolf-Rayet stars. Near us, it manifests as
+                      Parker spirals and its interaction with the magnetosphere allows
+                      aurorae to be visible on the Earth's surface. For 10 points, name this
+                      phenomenon in which charged particles are ejected from a star's
+                      surface.
+           buzz_prob: 0.2736
+--------------------
+               guess: Switzerland
+              answer: Switzerland
+                  id: 93319
+GprGuesser_confidence: -10.4105
+TfidfGuesser_confidence: 0.2184
+         Length_word: 4.5539
+        Length_guess: 2.4849
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0357
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: Commoners in this country protested the restoration of the aristocracy
+                      by burning tax archives in the Bourla-Papey uprising. Under the
+                      command of Karl Josef von Bachmann, a last stand of soldiers from this
+                      country occurred on the 10th of August, 1792, an event commemorated by
+                      the Danish sculptor Bertel Thorvaldsen. David Frankfurter killed the
+                      founder of this nation's branch of the Nazi party, Wilhelm Gustloff.
+                      Earlier, FrÃ©dÃ©ric-CÃ©sar de La Harpe worked with the French
+                      Directory in establishing a republic here. A federal state was
+                      established in this country after Henri Dufour won the Sonderbund
+           buzz_prob: 0.2674
+--------------------
+               guess: Polish
+              answer: Polish_language
+                  id: 102096
+GprGuesser_confidence: -6.2707
+TfidfGuesser_confidence: 0.1715
+         Length_word: 5.1761
+        Length_guess: 1.9459
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: One poem in this language asks "what will remain after us / will it be
+                      lovers' weeping / in a small dirty hotel / when wall-paper dawns" and
+                      unfavorably compares "generals of the most recent wars" to Thucydides
+                      after the Battle of Amphipolis. The dying speaker of a poem in this
+                      language wishes that "this sad heart of mine in leaves of aloe burn! /
+                      And give it then to her who's given it to me" while imagining his
+                      friends drinking at his funeral. "Those who expected thunder and
+                      lightning / Are disappointed" by the end of the world in a poem in
+                      this language, which was used to write several poems that personify
+                      humanity as "Mr. Cogito". The author of the collections Three Winters
+                      and Facing the River used this language to write a book that discusses
+                      ketman and profiles Alpha, Beta, Gamma, and Delta, who all give into
+                      the Communist state. The Captive Mind is a work in, for 10 points,
+                      what language of Zbigniew Herbert, Juliusz Słowacki (swo-VAHT-ski) and
+                      Czesław Miłosz (tche-swaf mee-wosh)?
+           buzz_prob: 0.3609
+--------------------
+               guess: Electron Paramagnetic Resonance
+              answer: Electron_paramagnetic_resonance
+                  id: 101959
+GprGuesser_confidence: -2.7791
+TfidfGuesser_confidence: 0.1518
+         Length_word: 4.6347
+        Length_guess: 3.4657
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: This technique can be applied to study membrane-bound ion channels by
+                      tagging parts of the channel with nitro groups and using this method
+                      to approximate the distance. This method was used to measure the
+                      effects of symmetry-enhanced or forbidden hyperconjugation in cyclic
+                      systems by David Whiffen. High-frequency and parallel-mode variants of
+                      this technique are used to probe intermediates in the catalytic cycles
+                      of ribonucleotide reductase and phenylalanine hydroxylase. Information
+                      on the coupling between the centers studied in this technique and
+                      their environment can be studied using pulsed ENDOR. Peak splitting in
+                      this technique is caused by hyperfine coupling. Absorbances in this
+                      technique
+           buzz_prob: 0.2522
+--------------------
+               guess: Battle of the Metaurus
+              answer: Battle_of_the_Metaurus
+                  id: 101934
+GprGuesser_confidence: -6.7393
+TfidfGuesser_confidence: 0.2219
+         Length_word: 5.1120
+        Length_guess: 3.1355
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: Prior to this engagement, one force had unsuccessfully attempted to
+                      lay siege to Placentia, then proceeded south to Fanum Fortunae. When
+                      that army's commander heard the sounding of a trumpet, he correctly
+                      surmised that another general had arrived in the opposing camp, so he
+                      briefly withdrew during a night where his guards apparently deserted
+                      him. The prelude to this clash was the Battle of Grumentum, in which a
+                      nearby force camped at Canusium was repelled. The opposing army was
+                      commanded by a man whose later dispute about a tax on salt earned him
+                      the nickname Salinator; he was reinforced by the army of his co-consul
+                      Gaius Claudius Nero, who circled a ravine to execute a pincer attack.
+                      This battle, in which Marcus Livius Drusus defeated a man whose
+                      severed head was then thrown into his brother's camp, was the last
+                      major clash in Italy during the Second Punic War. For 10 points, name
+                      this 207 BC battle, where Hasdrubal was killed at the namesake river.
+           buzz_prob: 0.3793
+--------------------
+               guess: Potential energy
+              answer: Potential_energy
+                  id: 101999
+GprGuesser_confidence: -9.5705
+TfidfGuesser_confidence: 0.1753
+         Length_word: 4.0943
+        Length_guess: 2.8332
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0481
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: When this quantity becomes very large, the reflection coefficient
+                      becomes greater than one, according to the Klein paradox. The Fourier
+                      transform of this quantity gives the first-order scattering amplitude
+                      according to the Born approximation. When this quantity is
+                      proportional to a delta function, the system possesses a continuum of
+                      sinusoidal scattering states with positive energy and a single bound
+           buzz_prob: 0.1813
+--------------------
+               guess: Béla Kun
+              answer: Béla_Kun
+                  id: 101971
+GprGuesser_confidence: -9.8493
+TfidfGuesser_confidence: 0.1241
+         Length_word: 4.7362
+        Length_guess: 2.1972
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: During a meeting of the Executive of the International, this leader
+                      was repeatedly insulted by another leader for his "stupid mistakes,"
+                      such as his support of Nestor Makhno. This man's government was
+                      supported by a group of leather-jacket clad enforcers called the Lenin
+                      Boys. After being released from prison, he came to power after the
+                      issuance of the Vix Note, demanding that the eastern limits of his
+                      country be pushed inward. In collaboration with Zinoviev, he supported
+                      a failed KPD- led workers' uprising in Germany called the "March
+                      Action." He controlled most of the power as Commissar of Foreign
+                      Affairs in a government nominally headed by Sándor Garbai. This man's
+                      coalition brought down
+           buzz_prob: 0.2203
+--------------------
+               guess: microscope
+              answer: Microscope
+                  id: 141355
+GprGuesser_confidence: -11.2697
+TfidfGuesser_confidence: 0.1374
+         Length_word: 4.7449
+        Length_guess: 2.3979
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: One type of these devices can run in a constant height or constant
+                      current mode, and functions by creating a bias and measuring the
+                      tunneling current. These devices are used to locate hybridized probes
+                      in FISH ["fish"], and can identify locations stained with phalloidin
+                      derivatives or DAPI ["DAH-pee"]. One type of these devices uses
+                      dichroic mirrors to isolate specific wavelengths of fluorescence.
+                      Samples used in these devices may need to be mounted and placed under
+                      a coverslip. Anton van Leeuwenhoek's ["LAY-ven-hook"] use of these
+                      devices led to his observations of "animalcules" which were later
+                      revealed to be microbes. For 10 points, name this sort of device which
+                      uses a set of lenses to magnify
+           buzz_prob: 0.2218
+--------------------
+               guess: Renzo Piano
+              answer: Renzo_Piano
+                  id: 93425
+GprGuesser_confidence: -9.0105
+TfidfGuesser_confidence: 0.1945
+         Length_word: 4.7185
+        Length_guess: 2.4849
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: This architect incorporated elements of Kanak hut architecture in his
+                      design for a convention center located in Noumea, New Caledonia. He
+                      converted a gigantic automobile manufacturing plant into a convention
+                      center and trade fair district. He used ferroconcrete leaves to serve
+                      as both a heat source and protection against UV light in the roof of a
+                      museum which houses his Cy Twombly Pavilion. This architect of the
+                      Menil Collection designed an airport terminal on an artificial island
+                      in Japan and a glass-covered pyramidal skyscraper that eclipses
+                      everything else in London. With an American, he designed a color-coded
+                      building complex named for a former President of France. For 10
+                      points, name this
+           buzz_prob: 0.2786
+--------------------
+               guess: Ionia
+              answer: Ionia
+                  id: 93451
+GprGuesser_confidence: -9.7541
+TfidfGuesser_confidence: 0.1357
+         Length_word: 3.9512
+        Length_guess: 1.7918
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: An underground aqueduct was built for a city in this region by the
+                      engineer Eupalinos. An architect from this area invented the grid plan
+                      for city layouts, which was later adapted by many Roman cities. This
+                      home region of Hippodamus, which was originally settled by Luwians,
+                      lost its autonomy after the
+           buzz_prob: 0.1423
+--------------------
+               guess: Catiline
+              answer: Catiline
+                  id: 93184
+GprGuesser_confidence: -7.0632
+TfidfGuesser_confidence: 0.2364
+         Length_word: 4.6728
+        Length_guess: 2.1972
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: He's not Maxentius, but a supporter of this man was captured at the
+                      Milvian Bridge by Caius Pomtinus, and was named Titus Volturcius. Some
+                      allies of this man were strangled by cords in the Tullian dungeon;
+                      another ally of his had Publius Umbrenus try to gain the support of
+                      the Allobroges, who revealed his plans instead. This man may have
+                      bribed Quintus Lutatius Catulus to testify for him during his trial
+                      for adultery with a Vestal Virgin. In one speech this man was asked,
+                      "How long...will you abuse our patience?" before he died fighting at
+                      the Battle of Pistoria. This subject of a history by Sallust
+           buzz_prob: 0.3286
+--------------------
+               guess: The Great Chain of Being
+              answer: The_Great_Chain_of_Being
+                  id: 101954
+GprGuesser_confidence: -6.9714
+TfidfGuesser_confidence: 0.1311
+         Length_word: 5.0173
+        Length_guess: 3.2189
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: This book includes an analysis of Robert Fludd's view that there is an
+                      evil component in God in a chapter about conflicts in medieval
+                      thought. Its chapter on sufficient reason argues that Leibniz's theory
+                      of monads illustrates his belief that God is not responsible for
+                      creation. This 1936 book is a collection of eleven of its author's
+                      William James lectures and draws on its author's earlier Primitivism
+                      and Related Ideas in Antiquity. This study argues that Aristotle was
+                      the first to articulate the belief that intermediate things between
+                      two things will always exist, which it calls the "Principle of
+                      Continuity." That principle, along with the idea that all things that
+                      are not self-contradictions will always exist, which is called the
+                      "Principle of Plenitude," is used to examine the Alexander Pope
+                      inspired title concept. For 10 points, name this analysis of the
+                      hierarchical principle throughout intellectual history, authored by
+                      Arthur Lovejoy.
+           buzz_prob: 0.2702
+--------------------
+               guess: The Plague (1992 film)
+              answer: The_Plague
+                  id: 141313
+GprGuesser_confidence: -2.9282
+TfidfGuesser_confidence: 0.2357
+         Length_word: 4.7791
+        Length_guess: 3.1355
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0264
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: This novel's narrator observes that "there are more things to admire
+                      in men than to despise" after revealing his identity at the novel's
+                      end. In this novel, an audience watching Gluck's Orfeo ed Euridice
+                      panics after the lead singers collapse. In this novel, a man who lures
+                      cats to his balcony so that he can spit on them is the neighbor of
+                      Tarrou. The journalist Raymond Rambert struggles to escape the setting
+                      of this novel to return to his wife in Paris. In this novel, two
+                      sermons are delivered by Father Paneloux. For 10 points, name this
+                      novel set in the Algerian city of Oran, in which Dr. Bernard Rieux
+                      combats the title ailment, written by Albert Camus.
+           buzz_prob: 0.3528
+--------------------
+               guess: Philosophy and the Mirror of Nature
+              answer: Philosophy_and_the_Mirror_of_Nature
+                  id: 102076
+GprGuesser_confidence: -2.6537
+TfidfGuesser_confidence: 0.2025
+         Length_word: 4.9416
+        Length_guess: 3.5835
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: This book considers if Aristotle was wrong about motion being divided
+                      into natural and force parts in the section "What Were Our Ancestors
+                      Talking About?" which examines the impossibility of finding a
+                      deterministic answer to the general question "What did they mean?"
+                      Another section of this book examines the Copernicus-Bellarmine
+                      debates and suggests that Thomas Kuhn's incommensurability thesis
+                      makes them incomparable to the Lenin-Kerensky debates. Its second
+                      chapter opens with a thought experiment in which a group of bipeds on
+                      the other side of the galaxy developed breakthroughs in neurology and
+                      biochemistry, and thus conceived of human pain as the stimulation of
+                      C-fibers. That section on the Antipodeans appears in a portion of this
+                      text about "persons without minds" in an attempt to refute a certain
+                      Greek ocular metaphor. The correspondence theory of truth and the view
+                      that epistemology
+           buzz_prob: 0.3500
+--------------------
+               guess: New Zealand
+              answer: New_Zealand
+                  id: 93312
+GprGuesser_confidence: -9.0167
+TfidfGuesser_confidence: 0.1446
+         Length_word: 4.4067
+        Length_guess: 2.4849
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0355
+WikiScore_guess_rank_rel_fs: 7
+WikiScore_guess_sim_rel_fs: 0.0355
+                text: As of 2002, this country is the largest user of a sodium
+                      fluoroacetate-derived pesticide called 1080. The timber industry in
+                      this country was historically driven by logging of its kauri tree.
+                      This country is home to the only living sphenodont, whose survival is
+                      threatened by the kiore rat and which has an unusually well-developed
+                      photoreceptive third eye, complete with lens and retina. That lizard-
+                      like "living fossil" is named for the crested spine on its back. This
+                      country, whose only native land
+           buzz_prob: 0.4467
+--------------------
+               guess: Boston Police Strike
+              answer: Boston_Police_Strike
+                  id: 102208
+GprGuesser_confidence: -6.9886
+TfidfGuesser_confidence: 0.2664
+         Length_word: 4.8203
+        Length_guess: 3.0445
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: James Jackson Storrow headed a commission charged with investigating
+                      grievances prior to this event. Legislation put forth by Albert
+                      Pillsbury was a major impetus for this event, which Lawrence Lowell
+                      tried to mitigate by asking for volunteer students. The attempts of
+                      Andrew James Peters to resolve it peacefully were mostly unsuccessful,
+                      after it resulted when Edwin Upton Curtis issued a General Order
+                      prohibiting the central group from "serving two masters." Francis
+                      Russell wrote A City in Terror about this event, during which
+                      participants gathered at Scollay Square until scattered by a threat of
+                      live ammunition. Commissioner Curtis was supported during this
+                      incident by Governor Calvin Coolidge, who issued a response to Samuel
+                      Gompers declaring that "there is no right to strike against the
+           buzz_prob: 0.3726
+--------------------
+               guess: Miss Julie
+              answer: Miss_Julie
+                  id: 93433
+GprGuesser_confidence: -10.8193
+TfidfGuesser_confidence: 0.2804
+         Length_word: 4.0431
+        Length_guess: 2.3979
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0270
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: In a dream in this work, a character lying at the bottom of a tree
+                      unsuccessfully attempts to climb to the lowest branch or steal the
+                      golden eggs at the top. That character tells a story of sneaking
+                      inside a "Turkish pavilion," which turned out to be an outhouse. In
+                      this play, the cook blames another
+           buzz_prob: 0.2361
+--------------------
+               guess: New Jersey
+              answer: New_Jersey
+                  id: 101976
+GprGuesser_confidence: -9.0899
+TfidfGuesser_confidence: 0.1232
+         Length_word: 5.0239
+        Length_guess: 2.3979
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0480
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: The colonial treasury of this U.S. state, housed at the mansion of
+                      Stephen Skinner, was robbed in 1768, resulting in a loss of 6,750
+                      pounds. Its patriots have included Philemon Dickinson and Captain
+                      Joshua Huddy, whose lynching led to the Asgill Affair. A mayor in this
+                      state, Mark Fagan, led a Progressive offshoot of the Republican Party
+                      called the New Idea Movement. Its governor Peter D. Vroom was one of
+                      five men involved in this state's election controversy called the
+                      Broad Seal War. This state's first income tax was implemented by a
+                      much later governor, Brendan Byrne. It's the subject of the book "The
+                      Traitor State" by Lincoln Steffens, who denounced the family of its
+                      politician Theodore Frelinghuysen. A mansion in this state,
+                      Drumthwacket, is now the official residence of its governors, like
+                      James Florio and a woman who became the EPA director under George W.
+                      Bush. For 10 points, name
+           buzz_prob: 0.2754
+--------------------
+               guess: Gudrun.
+              answer: Gudrun
+                  id: 101942
+GprGuesser_confidence: -8.7258
+TfidfGuesser_confidence: 0.0986
+         Length_word: 5.0626
+        Length_guess: 2.0794
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 100
+WikiScore_guess_sim_rel_fs: 0
+                text: Armor made by this character that was immune to steel and iron weapons
+                      was used successfully by her sons until an old man revealed that the
+                      armor had a weakness to stones. Those sons of this character were
+                      attempting to take revenge for the horse-trampling death of their
+                      sister, who was accused of having an affair with Randver. This
+                      character attempts to commit suicide by holding stones and jumping
+                      into the sea, but the waves carry her to the kingdom of Jonakr, who
+                      she marries. In one source, this mother of Hamdir, Sörli, and
+                      Svanhild is hacked up by Hildebrand, the mentor of Dietrich of Bern,
+                      after she decapitates Hagen. In another source, she takes revenge for
+                      her murdered family by killing her sons Erp and Eitil and feeding them
+                      to the murderer, her second husband Atli. In the Nibelungenlied, this
+                      character is known as Kriemhild. For 10 points, name this sister of
+                      Gunnar who marries Sigurd
+           buzz_prob: 0.2537
+--------------------
+best 0.06
+===================
+               guess: Requiem
+              answer: Requiem
+                  id: 141371
+GprGuesser_confidence: -9.7977
+TfidfGuesser_confidence: 0.2079
+         Length_word: 4.4543
+        Length_guess: 2.0794
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0594
+WikiScore_guess_rank_rel_fs: 4
+WikiScore_guess_sim_rel_fs: 0.0594
+                text: A piece in this genre represents the cardinal directions with a set of
+                      four brass bands that enter in the second section. Unusually, a solo
+                      soprano sings the Pie ["PEE-ay"] Jesu in the central movement of
+                      Gabriel FaurÃ©'s piece of this type. Mozart called for a double fugue
+                      on the words "Kyrie eleison" ["KEY-ree-ay eh-lay-son"] and "Christe
+                      eleison" in a piece of this type whose movements include the Tuba
+                      mirum and the Confutatis maledictis. The Dies Irae section of that
+                      piece in this genre breaks
+           buzz_prob: 0.5861
+--------------------
+               guess: John Coltrane
+              answer: John_Coltrane
+                  id: 141340
+GprGuesser_confidence: -6.9718
+TfidfGuesser_confidence: 0.2720
+         Length_word: 4.7362
+        Length_guess: 2.6391
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1698
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1698
+                text: An album by this musician begins its second track with a double bass
+                      solo played by Jimmy Garrison. That album's final track is the timpani
+                      roll-introduced "Psalm," while a single gong strike begins its opening
+                      track, "Acknowledgement." This composer paid tribute to his bassist in
+                      the "Mr. P.C." track of an album that includes a ballad titled for his
+                      wife Naima. That album is titled for the frequent leaps between chords
+                      used in its title track. This jazz musician adapted a song from The
+                      Sound of Music into the title track of the album My Favorite Things.
+                      For 10 points, name this saxophonist who wrote the albums Giant Steps
+                      and A Love Supreme.
+           buzz_prob: 0.8663
+--------------------
+               guess: Nitrile
+              answer: Nitrile
+                  id: 102385
+GprGuesser_confidence: -8.1595
+TfidfGuesser_confidence: 0.2224
+         Length_word: 4.8363
+        Length_guess: 2.0794
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1435
+WikiScore_guess_rank_rel_fs: 3
+WikiScore_guess_sim_rel_fs: 0.1435
+                text: These compounds can be synthesized using Nagata's reagent. Reaction of
+                      one of these compounds with tin chloride and hydrochloric acid
+                      followed by hydrolysis yields an aldehyde in the Stephen synthesis.
+                      These compounds produce chemical shifts of 115-120 ppm in carbon-13
+                      NMR. In another reaction, one of these compounds is nucleophilically
+                      attacked by an alcohol in the presence of catalytic hydrochloric acid,
+                      forming an intermediate which can be hydrolyzed into an ester or
+                      converted into an amidine by adding ammonia. Two equivalents of this
+                      functional group are present in the radical initiator AIBN. An alpha-
+                      amino one of these compounds can be hydrolyzed to an amino acid in the
+                      Strecker synthesis. These compounds can be converted to primary amines
+                      via two equivalents of hydrogen and Raney nickel.
+           buzz_prob: 0.8134
+--------------------
+               guess: Epistle to the Romans
+              answer: Epistle_to_the_Romans
+                  id: 93366
+GprGuesser_confidence: -7.1304
+TfidfGuesser_confidence: 0.1473
+         Length_word: 4.8040
+        Length_guess: 3.0910
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1165
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1165
+                text: Chapter 8 of this text notes that all creation is "groaning" as in the
+                      pains of childbirth; later, it compares its addressees to a branch
+                      grafted into an olive root, who must offer their bodies as "living
+                      sacrifices." Augustine opened to this Biblical book after hearing the
+                      command "Tolle, lege," which turned him Christian. A commentary on
+                      this text, stressing the "wholly otherness of God," was written during
+                      World War I by Karl Barth. This text's third chapter states that all
+                      Jews and Gentiles alike have fallen short of the grace of God, and its
+                      sixth chapter says that "the wages of sin is death." Martin Luther
+                      used this epistle to support justification by faith alone. For 10
+                      points, name this
+           buzz_prob: 0.7060
+--------------------
+               guess: The Hollow Men
+              answer: The_Hollow_Men
+                  id: 141334
+GprGuesser_confidence: -8.1196
+TfidfGuesser_confidence: 0.2575
+         Length_word: 3.9703
+        Length_guess: 2.7081
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1565
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1565
+                text: This poem's final stanza is quoted at the end of Tracy Letts' play
+                      August: Osage County by Johanna. The stanzas of this poem's final
+                      sections end with quotations of the Lord's Prayer and the statement
+                      "life is very long." This poem includes a mock-nursery rhyme beginning
+                      "here we go round the prickly
+           buzz_prob: 0.7404
+--------------------
+               guess: Jean-Paul Sartre
+              answer: Jean-Paul_Sartre
+                  id: 93315
+GprGuesser_confidence: -2.7667
+TfidfGuesser_confidence: 0.2409
+         Length_word: 4.7958
+        Length_guess: 2.8332
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0676
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.0676
+                text: One novel by this author begins as Neville Chamberlain and other
+                      politicians wait to meet with Hitler in the eight days leading up to
+                      the Munich Agreement. In another novel by this man, Brunet is a
+                      communist friend of Mathieu, who resolves to steal 5000 francs to pay
+                      for Marcelle's abortion. This author included The Reprieve and The Age
+                      of Reason in an unfinished tetralogy. One of this man's protagonists
+                      meets the Autodidact in a local library as he researches the Marquis
+                      de Rollebon. That novel by this author of The Roads to Freedom
+                      consists of diary entries by Antoine Roquentin, whose contemplation of
+                      everyday objects makes him feel sick about the absurdity of life. For
+                      10 points, name this
+           buzz_prob: 0.7403
+--------------------
+               guess: David Foster Wallace
+              answer: David_Foster_Wallace
+                  id: 141348
+GprGuesser_confidence: -6.2908
+TfidfGuesser_confidence: 0.3381
+         Length_word: 4.7185
+        Length_guess: 3.0445
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1198
+WikiScore_guess_rank_rel_fs: 1
+WikiScore_guess_sim_rel_fs: 0.1198
+                text: This man claims "the capital-T Truth is about life before death" in a
+                      work that begins with a joke about two young fish swimming by an older
+                      fish. David Lipsky wrote about a road trip he took with this author in
+                      the book Although of Course You End Up Becoming Yourself. He gave a
+                      commencement address at Kenyon College that ends with the statement
+                      "this is water." A group of Quebecois "wheelchair assassins" appear in
+                      a novel by this author set during the Year of the Depend Adult
+                      Undergarment. In that novel by this author, Hal Incandenza attends the
+                      Enfield Tennis Academy. For 10 points, name this author of Infinite
+                      Jest.
+           buzz_prob: 0.8485
+--------------------
+               guess: Native Son
+              answer: Native_Son
+                  id: 102092
+GprGuesser_confidence: -9.0121
+TfidfGuesser_confidence: 0.2628
+         Length_word: 5.0876
+        Length_guess: 2.3979
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1518
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1518
+                text: After turning down the lead in a stage adaptation of this novel, a
+                      character in a different story knocks over a candle at an Italian
+                      restaurant because he is angry about being thrown out of his Jewish
+                      friend Jules's apartment. That story was written by an author who
+                      claimed that this novel creates a "climate of anarchy and [an]
+                      unmotivated and un-apprehended disaster," noting the "overwhelming
+                      limitation" of the "fearful image" it "[attempts] to redeem... in
+                      social terms." The novel-within-a-novel Fuck from Percival Everett's
+                      Erasure parodies both Sapphire's Push and this novel. The protagonist
+                      of this novel "has accepted a theology that denies him life" according
+                      to an essay that traces its lineage from Uncle Tom's Cabin. This novel
+                      was criticized in "Many Thousands Gone" and "Everybody's Protest
+                      Novel," two essays in a James Baldwin collection of "notes" named for
+                      it. For 10 points, name this novel in which Mary Dalton is suffocated
+                      by Bigger Thomas, a work of Richard Wright.
+           buzz_prob: 0.8708
+--------------------
+               guess: Finland
+              answer: Finland
+                  id: 93301
+GprGuesser_confidence: -10.4257
+TfidfGuesser_confidence: 0.1650
+         Length_word: 4.5850
+        Length_guess: 2.0794
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0551
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.0551
+                text: This nation's analogue of Molly Pitcher gave her name to an auxiliary
+                      women's battalion in operation during World War II, called Lotta
+                      SvÃ¤rd. A bishop generally credited with establishing this country's
+                      written tradition wrote a primer called ABC-kiria. Frederick Charles
+                      of Hesse was the only king of this country, which produced a soldier
+                      nicknamed "White Death" for being the deadliest sniper in history.
+                      This home of Simo HÃ¤yhÃ¤, prime minister Risto Ryti, and Mikael
+                      Agrikola won the Battle of Suomussalmi during a war that led into the
+                      Continuation War, in which it built a defensive line running
+           buzz_prob: 0.5613
+--------------------
+               guess: Friction
+              answer: Friction
+                  id: 93371
+GprGuesser_confidence: -9.2181
+TfidfGuesser_confidence: 0.2934
+         Length_word: 4.9200
+        Length_guess: 2.1972
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1479
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1479
+                text: A model of this phenomenon developed in Lund and Grenoble built on an
+                      earlier one that analogized its relation with position to a stress-
+                      strain curve and accounted for hysteresis in the case of permanent
+                      displacement. Described by the Dahl model, this behavior was shown by
+                      IBM in 2008 at a molecular level using an atomic force microscope on
+                      cobalt atoms cooled to 5K. This phenomenon causes head loss
+                      proportional to the flow velocity squared divided by the hydraulic
+                      diameter and multiplied by the pipe length as well as a value
+                      describing this phenomenon named for Darcy. The strength of this force
+                      is independent of contact area and sliding velocity according to laws
+                      named for Amontons and Coulomb. For 10 points, name this force whose
+                      maximum value is proportional to the normal force and which opposes
+                      motion.
+           buzz_prob: 0.8689
+--------------------
+               guess: Epistle to the Romans
+              answer: Epistle_to_the_Romans
+                  id: 93366
+GprGuesser_confidence: -7.1709
+TfidfGuesser_confidence: 0.1492
+         Length_word: 4.4543
+        Length_guess: 3.0910
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0652
+WikiScore_guess_rank_rel_fs: 1
+WikiScore_guess_sim_rel_fs: 0.0652
+                text: Chapter 8 of this text notes that all creation is "groaning" as in the
+                      pains of childbirth; later, it compares its addressees to a branch
+                      grafted into an olive root, who must offer their bodies as "living
+                      sacrifices." Augustine opened to this Biblical book after hearing the
+                      command "Tolle, lege," which turned him Christian. A commentary on
+                      this text, stressing the "wholly otherness of God," was written during
+                      World War I by Karl Barth. This text's third chapter states that all
+                      Jews and Gentiles alike
+           buzz_prob: 0.5431
+--------------------
+               guess: Job
+              answer: Book_of_Job
+                  id: 93210
+GprGuesser_confidence: -6.7581
+TfidfGuesser_confidence: 0.2057
+         Length_word: 4.9558
+        Length_guess: 1.3863
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1496
+                text: An interlude about mining which interrupts this man's story states
+                      that wisdom "cannot be valued with the gold of Ophir." A 1952 book,
+                      which claims the Sophia archetype helped God attain self-consciousness
+                      by incarnating as Jesus, is Carl Jung's Answer to this man. This man
+                      asks if he has stone strength or brass flesh shortly before saying his
+                      "brethren have dealt deceitfully as a brook." A voice tells this man
+                      to "gird [his] loins" from within a whirlwind, asking him "where wast
+                      thou when I laid the foundations of the Earth?" This man gets rotating
+                      advice from Eliphaz, Bildad, and Zophar after his estate in Uz is
+                      destroyed and he is struck with boils due to a bet between God and
+                      Satan. For 10 points, name this pious namesake of an Old Testament
+                      book who nearly loses his faith in agony.
+           buzz_prob: 0.7571
+--------------------
+               guess: Requiem (Mozart)
+              answer: Requiem
+                  id: 141371
+GprGuesser_confidence: -0.1564
+TfidfGuesser_confidence: 0.1815
+         Length_word: 4.7449
+        Length_guess: 2.8332
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0706
+WikiScore_guess_rank_rel_fs: 2
+WikiScore_guess_sim_rel_fs: 0.0706
+                text: A piece in this genre represents the cardinal directions with a set of
+                      four brass bands that enter in the second section. Unusually, a solo
+                      soprano sings the Pie ["PEE-ay"] Jesu in the central movement of
+                      Gabriel FaurÃ©'s piece of this type. Mozart called for a double fugue
+                      on the words "Kyrie eleison" ["KEY-ree-ay eh-lay-son"] and "Christe
+                      eleison" in a piece of this type whose movements include the Tuba
+                      mirum and the Confutatis maledictis. The Dies Irae section of that
+                      piece in this genre breaks off eight bars into the Lacrimosa, from
+                      which point the remainder was completed by Franz Sussmayr. For 10
+                      points, name this liturgical genre of music written for the dead.
+           buzz_prob: 0.6944
+--------------------
+               guess: Nitrile
+              answer: Nitrile
+                  id: 102385
+GprGuesser_confidence: -8.4470
+TfidfGuesser_confidence: 0.2539
+         Length_word: 4.5326
+        Length_guess: 2.0794
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1334
+WikiScore_guess_rank_rel_fs: 3
+WikiScore_guess_sim_rel_fs: 0.1334
+                text: These compounds can be synthesized using Nagata's reagent. Reaction of
+                      one of these compounds with tin chloride and hydrochloric acid
+                      followed by hydrolysis yields an aldehyde in the Stephen synthesis.
+                      These compounds produce chemical shifts of 115-120 ppm in carbon-13
+                      NMR. In another reaction, one of these compounds is nucleophilically
+                      attacked by an alcohol in the presence of catalytic hydrochloric acid,
+                      forming an intermediate which can be hydrolyzed into an ester or
+                      converted into an amidine by adding ammonia. Two equivalents of this
+                      functional group are present in the radical initiator AIBN.
+           buzz_prob: 0.7833
+--------------------
+               guess: Edward
+              answer: Edward
+                  id: 93417
+GprGuesser_confidence: -12.4004
+TfidfGuesser_confidence: 0.2711
+         Length_word: 4.7449
+        Length_guess: 1.9459
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0413
+WikiScore_guess_rank_rel_fs: 1
+WikiScore_guess_sim_rel_fs: 0.0571
+                text: After becoming the first High King of Ireland since Brian O'Neill, a
+                      man with this first name died fighting John de Bermingham at the
+                      Battle of Faughart. At the Feast of the Swans, another man with this
+                      name was knighted by his father before going on a campaign to avenge
+                      the death of John Comyn. A third man of this name was supported by the
+                      English victory at the Battle of Halidon Hill, which was not enough to
+                      overcome his rival David II's claim to the throne. In addition to a
+                      brother of Robert the Bruce and the son of John Balliol, people with
+                      this name include a king who was probably the lover
+           buzz_prob: 0.6760
+--------------------
+               guess: Jean Racine
+              answer: Jean_Racine
+                  id: 93179
+GprGuesser_confidence: -8.1886
+TfidfGuesser_confidence: 0.1901
+         Length_word: 4.9200
+        Length_guess: 2.4849
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1739
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1739
+                text: In a play by this author, the young boy Joas is hidden in a temple to
+                      escape the murder of his siblings by the title queen so that he may
+                      survive to become king of the Jews. This author included the nobly-
+                      born servants Cleone and Cephisa in another play. This author of
+                      Athalie used a meter with a caesura in the middle of each line to
+                      write a monologue relating how a prince's horses were frightened by a
+                      bull-dragon which arose from the sea off-stage. He used that
+                      alexandrine verse to adapt a plot in which Helen's daughter Hermione
+                      loves Pyrrhus, and another plot also derived from Euripides in which
+                      Aricie is treated like a daughter after Hippolytus is accused of
+                      raping his stepmother. For 10 points, name this 17th-century French
+                      playwright of Andromache and PhÃ¨dre.
+           buzz_prob: 0.8385
+--------------------
+               guess: Charles Dickens
+              answer: Charles_Dickens
+                  id: 101958
+GprGuesser_confidence: -9.0889
+TfidfGuesser_confidence: 0.1796
+         Length_word: 5.1059
+        Length_guess: 2.7726
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0625
+WikiScore_guess_rank_rel_fs: 2
+WikiScore_guess_sim_rel_fs: 0.0625
+                text: In a novel by this author, a character bursts into tears after
+                      overhearing a joke about her getting abducted by a black tam- bourine
+                      player. In another novel by this author, a character drowns while
+                      fighting a schoolteacher, and earlier provides a false affidavit
+                      against a man who makes a living robbing drowned bodies. This author
+                      wrote a novel in which a character teams up with the hangman Ned
+                      Dennis to abduct two girls during an event in which both of his legs
+                      are crushed. Another of his characters marries Bella Wilfer after
+                      being fired by Mr. Boffin, and changes his last name from Harmon to
+                      Rokesmith after a body mistaken for his is found by Gaffer Hexam. One
+                      of this author's title characters has a raven that repeats the phrase
+                      "Never say die!" named Grip, and works at the Maypole Inn in a novel
+                      set largely during the Gordon Riots. For 10 points, name this author
+                      of Our Mutual Friend and Barnaby Rudge.
+           buzz_prob: 0.6798
+--------------------
+               guess: Frigg
+              answer: Frigg
+                  id: 93171
+GprGuesser_confidence: -9.2292
+TfidfGuesser_confidence: 0.2981
+         Length_word: 3.6376
+        Length_guess: 1.7918
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0712
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.0712
+                text: Most scholars identify this deity with a figure named Saga who dwells
+                      in Sokkvabekk. Along with a servant, this deity helped to heal the
+                      horse of Phol. Hlin and Syn serve this figure, who told the women
+           buzz_prob: 0.5738
+--------------------
+               guess: Osiris
+              answer: Osiris
+                  id: 102005
+GprGuesser_confidence: -10.5518
+TfidfGuesser_confidence: 0.1620
+         Length_word: 5.1059
+        Length_guess: 1.9459
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1498
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1498
+                text: In one source, the domain of this god was protected by twenty-one
+                      pylons and seven arits, all of which were successfully surpassed by
+                      Ani. According to the inscription on a sarcophagus lid, a high steward
+                      named Peftuaneith built a temple to an aspect of this god. That form
+                      of this god is sometimes also given as a form of a son of Nephthys,
+                      and is called Khenti-Amentiu. Another source suggests that the
+                      appearance of this god was heralded by the shout of Pamyles. This
+                      wearer of the atef crown is thought to be descended from the earlier
+                      Andjety, and he rules over a field of reed-covered islands called
+                      Aaru. Ptolemy I attempted to please his Greek overlords by creating a
+                      cult centered on a combination of this god and the Apis bull. In a
+                      myth related by Plutarch, a chest containing this god is retrieved
+                      from a tree in Byblos by his wife. For 10 points, name this Egyptian
+                      god of the afterlife who
+           buzz_prob: 0.8071
+--------------------
+               guess: Khmer Empire
+              answer: Khmer_Empire
+                  id: 93401
+GprGuesser_confidence: -8.7845
+TfidfGuesser_confidence: 0.1948
+         Length_word: 4.6913
+        Length_guess: 2.5649
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1869
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1869
+                text: Ruins built in this empire's first capital are called the Roluos
+                      Group. An expedition by Henri Mouhot spurred Western interest in this
+                      empire, which one man ascended to rule by jumping on the head of a
+                      rival's war elephant and killing him. Legendarily, this empire's
+                      founder declared independence from Sailendra before he absorbed the
+                      pre-existing Chenla people. Leaders called chakravartin led this
+                      empire, which built massive water reservoirs called baray. Many
+                      complexes built by this empire, such as Bayon, represented the
+                      mythical Mount Meru. This empire, whose boats fought against Champa on
+                      the Tonle Sap, was founded by Jayavarman II. For 10 points, name this
+                      Hindu-turned-Buddhist medieval empire
+           buzz_prob: 0.8280
+--------------------
+               guess: Hannibal
+              answer: Hannibal
+                  id: 141336
+GprGuesser_confidence: -10.5971
+TfidfGuesser_confidence: 0.2640
+         Length_word: 4.1744
+        Length_guess: 2.1972
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1903
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1903
+                text: Late in his career, this leader advised Antiochus III of Syria. Under
+                      this general, Ducarius killed Flaminius in the largest military ambush
+                      of recorded history, and this leader defeated forces under Lucius
+                      Aemilius Paullus and Gaius Terentius Varro by using a double-
+                      envelopment technique at the Battle of Cannae. An opponent of this
+                      victor at Lake Trasimene successfully used the sound of horns to
+                      create
+           buzz_prob: 0.8142
+--------------------
+               guess: Philip Glass
+              answer: Philip_Glass
+                  id: 93221
+GprGuesser_confidence: -9.7072
+TfidfGuesser_confidence: 0.2322
+         Length_word: 3.5553
+        Length_guess: 2.5649
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1185
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1185
+                text: This composer was instrumental in the relocation from Paris of the
+                      Mabou Mines theater company, for whom he wrote Music for Voices as
+                      well as a string quartet accompanying a performance of Samuel
+                      Beckett's
+           buzz_prob: 0.5631
+--------------------
+               guess: Talcott Parsons
+              answer: Talcott_Parsons
+                  id: 93207
+GprGuesser_confidence: -8.1625
+TfidfGuesser_confidence: 0.1682
+         Length_word: 4.3438
+        Length_guess: 2.7726
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1047
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1047
+                text: Niklas Luhmann extended this thinker's analysis of a problem in which
+                      communication cannot occur between two people when they will both base
+                      their behavior on the other. That problem of "double contingency"
+                      leads to the necessity of stability in this man's theory of
+                      interaction between ego and alter. Social choices are made using five
+                      axes, including the range between affective neutrality and
+                      affectivity, in this man's theory of "pattern variables." Systems must
+                      fulfill integration, latency, goal
+           buzz_prob: 0.6229
+--------------------
+               guess: Antonio Vivaldi
+              answer: Antonio_Vivaldi
+                  id: 93293
+GprGuesser_confidence: -8.6342
+TfidfGuesser_confidence: 0.2347
+         Length_word: 3.4965
+        Length_guess: 2.7726
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1290
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1290
+                text: Previously unknown works by this composer were featured at the
+                      Concerti Tigulliani organized by Olga Rudge and Ezra Pound, who helped
+                      popularize his music. Fritz Kreisler wrote a C major concerto that
+           buzz_prob: 0.5803
+--------------------
+               guess: Eugène Delacroix
+              answer: Eugène_Delacroix
+                  id: 102211
+GprGuesser_confidence: -0.4524
+TfidfGuesser_confidence: 0.3029
+         Length_word: 5.0304
+        Length_guess: 2.8332
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1276
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1276
+                text: This artist's assistant claimed that he saturated his paintings with a
+                      layer of oil in between sessions, as seen in his illustration of Lord
+                      Byron that shows cannibals on a boat, The Shipwreck of Don Juan.
+                      Louis-Philippe commissioned a painting by this artist in which knights
+                      abandon their raid on Jerusalem and instead sack the title city. This
+                      artist of Entry of the Crusaders in Constantinople depicted the green
+                      and red cloth-wrapped arm and hand of a dead figure protruding from
+                      the foreground rubble in a painting in which a turbaned Turk
+                      triumphantly plants a standard. Another of his paintings depicts the
+                      smoldering city of Dis in the background, while showing the nude
+                      oarsman Phlegyas next to a poet. For 10 points, name this artist who
+                      showed a bare-bosomed woman kneeling in exhaustion on some rocks in
+                      Greece Expiring on the Ruins of Missolonghi, who also painted The
+                      Barque of Dante and
+           buzz_prob: 0.8892
+--------------------
+               guess: The Rape of the Lock
+              answer: The_Rape_of_the_Lock
+                  id: 102251
+GprGuesser_confidence: -6.6063
+TfidfGuesser_confidence: 0.1062
+         Length_word: 4.6444
+        Length_guess: 3.0445
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0864
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.0864
+                text: This poem describes "lakes of liquid gold," "purple fires," "angels in
+                      machines," and "snakes on rolling spires," at a location occupied by
+                      living teapots, jars, bottles and a solitary pipkin. That place in
+                      this poem is ruled by a monarch served by handmaids called "Ill-
+                      Nature" and "Affection." A character in this poem visits that Queen to
+                      obtain a vial filled with "fainting fears" and "soft sorrows," as well
+                      as a wondrous bag that holds the "force of female lungs" and the "war
+                      of tongues." Later, that character finds his master weeping in
+                      Thalestris's arms. At the end of this poem, the title object
+           buzz_prob: 0.5829
+--------------------
+               guess: Love
+              answer: Love
+                  id: 102009
+GprGuesser_confidence: -6.4408
+TfidfGuesser_confidence: 0.1623
+         Length_word: 4.9628
+        Length_guess: 1.6094
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0639
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.0639
+                text: This is the first title concept of a treatise that cites the Fisher
+                      King motif in The Wasteland as an illness that is the "inability to
+                      wish." A 1956 work declares that this thing is "the only sane and
+                      satisfactory answer to the problem of human existence." A triangular
+                      theory of this phenomenon, one of whose components is commitment, was
+                      developed by Robert Sternberg. Rollo May suggested that this concept
+                      be integrated with "will" to make a human complete. A series of
+                      experiments in which rhesus monkeys became attached to wire meshes
+                      instead of their mothers are discussed in a Harry Harlow book titled
+                      for the nature of this phenomenon. Sigmund Freud used the Greek word
+                      for this thing to describe the "life instincts" that opposes thanatos,
+                      or the death instincts. For 10 points, name this human emotion which
+                      is often unrequited.
+           buzz_prob: 0.6819
+--------------------
+               guess: Swan Lake
+              answer: Swan_Lake
+                  id: 93475
+GprGuesser_confidence: -8.9303
+TfidfGuesser_confidence: 0.4126
+         Length_word: 4.3944
+        Length_guess: 2.3026
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1732
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1732
+                text: This ballet's final act sometimes includes an orchestration of the
+                      composer's piano piece "Un poco di Chopin." This ballet's antagonist
+                      was reimagined as a "Private Secretary" in a modern adaptation
+                      featuring non-classical dancing in a scene set at the Swank Bar, and
+                      which was produced by Matthew Bourne. Performances of this ballet are
+                      usually based on Riccardo Drigo's revision of the score, which he
+                      prepared for an 1895 revival choreographed by Lev Ivanov and Marius
+                      Petipa. Since that revival of
+           buzz_prob: 0.9029
+--------------------
+               guess: The Rape of the Lock
+              answer: The_Rape_of_the_Lock
+                  id: 102251
+GprGuesser_confidence: -7.2183
+TfidfGuesser_confidence: 0.3753
+         Length_word: 5.0562
+        Length_guess: 3.0445
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1324
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1324
+                text: This poem describes "lakes of liquid gold," "purple fires," "angels in
+                      machines," and "snakes on rolling spires," at a location occupied by
+                      living teapots, jars, bottles and a solitary pipkin. That place in
+                      this poem is ruled by a monarch served by handmaids called "Ill-
+                      Nature" and "Affection." A character in this poem visits that Queen to
+                      obtain a vial filled with "fainting fears" and "soft sorrows," as well
+                      as a wondrous bag that holds the "force of female lungs" and the "war
+                      of tongues." Later, that character finds his master weeping in
+                      Thalestris's arms. At the end of this poem, the title object shoots
+                      "thro' liquid air" and becomes a star; earlier, it was acquired by a
+                      noble during a game of ombre. This poem details a gnome's visit to the
+                      Cave of Spleen, and it begins "What dire Offence from am'rous causes
+                      Springs, what mighty Contests rise from Trivial things." For 10
+                      points, name this
+           buzz_prob: 0.9042
+--------------------
+               guess: The Phenomenology of Spirit
+              answer: The_Phenomenology_of_Spirit
+                  id: 101979
+GprGuesser_confidence: -3.9923
+TfidfGuesser_confidence: 0.1800
+         Length_word: 4.9053
+        Length_guess: 3.3322
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0648
+WikiScore_guess_rank_rel_fs: 2
+WikiScore_guess_sim_rel_fs: 0.0648
+                text: A work titled The Future of this book's author argues that its
+                      "plastic" thought easily allows for the theory of temporality to be
+                      applied to European philosophy - that dissertation on this book is by
+                      Catherine Malabou. In 1866, William Torrey Harris founded the Journal
+                      of Speculative Philosophy to explicate this text's ideas, such as the
+                      "Notion of the Thing," as part of the St. Louis school. Jacques
+                      Lacan's theory of desire was inspired by a series of lectures about
+                      reading this work, which discusses how a certain figure's quest for
+                      self-mastery is caused by his need for recognition since that need is
+                      greater than the fear of death; those lectures on it were delivered by
+                      Alexandre Kojeve. This text uses the term "sublation," or aufhebung,
+                      to describe the movement from opposition to unification,
+           buzz_prob: 0.6760
+--------------------
+aggressive 0.07
+===================
+               guess: Symphony No. 9 (Beethoven
+              answer: Cello_Concerto_(Elgar)
+                  id: 101951
+GprGuesser_confidence: -1.3157
+TfidfGuesser_confidence: 0.1753
+         Length_word: 4.1109
+        Length_guess: 3.2581
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0759
+WikiScore_guess_rank_rel_fs: 1
+WikiScore_guess_sim_rel_fs: 0.0980
+                text: This piece was premiered using soloist Felix Salmond, though the
+                      performance was met with scathing reviews after con- ductor Albert
+                      Coates wasted rehearsal time at the composer's expense. This work's
+                      adagio third movement concludes with a lyrical melody in B-flat major
+                      before transitioning into the more imposing B-flat minor opening of
+                      the finale without pause. This piece's adagio-moderato first movement
+           buzz_prob: 0.5896
+--------------------
+               guess: Isis
+              answer: Sobek
+                  id: 102182
+GprGuesser_confidence: -7.3335
+TfidfGuesser_confidence: 0.2015
+         Length_word: 4.2767
+        Length_guess: 1.6094
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0701
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.0701
+                text: The "Good Sister" and the "Lord of the Two Lands" are worshipped in
+                      the northern half of a symmetrical temple whose southern half is
+                      dedicated to this god. This god "spends seed with his phallus" and
+                      "takes wives from their husbands," according to the Pyramid Texts. The
+                      final ruler of the 12th Dynasty was named for the "beauty of" this
+                      god, whose worship was promul- gated by that ruler's father Amenemhat
+           buzz_prob: 0.6045
+--------------------
+               guess: Cicero
+              answer: Catiline
+                  id: 93184
+GprGuesser_confidence: -9.9303
+TfidfGuesser_confidence: 0.2272
+         Length_word: 4.2627
+        Length_guess: 1.9459
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0563
+WikiScore_guess_rank_rel_fs: 4
+WikiScore_guess_sim_rel_fs: 0.0563
+                text: He's not Maxentius, but a supporter of this man was captured at the
+                      Milvian Bridge by Caius Pomtinus, and was named Titus Volturcius. Some
+                      allies of this man were strangled by cords in the Tullian dungeon;
+                      another ally of his had Publius Umbrenus try to gain the support of
+                      the Allobroges, who revealed his plans instead. This man may have
+                      bribed Quintus Lutatius Catulus to testify for him during his
+           buzz_prob: 0.5657
+--------------------
+               guess: Deng Xiaoping
+              answer: Jiang_Zemin
+                  id: 93424
+GprGuesser_confidence: -6.5709
+TfidfGuesser_confidence: 0.1488
+         Length_word: 4.4188
+        Length_guess: 2.6391
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1081
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1081
+                text: While a mayor, this man replied to posters quoting "All men are
+                      created equal" by reciting the whole Gettysburg Address in English to
+                      student protesters. On a tour of his country's south, this leader
+                      formed an ideology based on "productive forces," "advanced culture,"
+                      and the interest of the majority, the Three Represents. The "Shanghai
+                      clique" got power via connections to this man, who retained his
+                      predecessor's Premier, Li Peng. This key person in the Third
+                      Generation of CCP leaders came to power
+           buzz_prob: 0.6365
+--------------------
+               guess: Umberto Eco
+              answer: Baudolino
+                  id: 102210
+GprGuesser_confidence: -8.0974
+TfidfGuesser_confidence: 0.1610
+         Length_word: 4.9558
+        Length_guess: 2.4849
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0527
+WikiScore_guess_rank_rel_fs: 1
+WikiScore_guess_sim_rel_fs: 0.0527
+                text: At the conclusion of this book, Paphnutius suggests to a character to
+                      suppress the narrative, since a "greater liar" will eventually tell
+                      it. Another character in this book is mortally wounded in the land of
+                      Abcasia, after which he looks in the mirror of the gymnosophists and
+                      sees his true love just before dying. In this book, a castle outfitted
+                      with the mirrors of Archimedes that contains seven gilded heads of
+                      John the Baptist belongs to the scholar Ardzrouni. The protagonist
+                      meets a skiapod named Gavagai and falls in love with a female satyr
+                      named Hypatia while in Pndapetzim ("pin-da-pet-zim"), long after his
+                      ability to learn languages enticed Frederick Barbarossa into adopting
+                      him. In this novel's frame narrative, its title character meets
+                      Niketas Choniates ("cho-nye-ah-tees") during the Fourth-Crusade sack
+                      of Constantinople and relates his life story, including his search for
+                      Prester
+           buzz_prob: 0.6301
+--------------------
+               guess: Thiol
+              answer: Aldehyde
+                  id: 102041
+GprGuesser_confidence: -9.0584
+TfidfGuesser_confidence: 0.1877
+         Length_word: 4.1431
+        Length_guess: 1.7918
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0838
+WikiScore_guess_rank_rel_fs: 8
+WikiScore_guess_sim_rel_fs: 0.0838
+                text: The addition of hexa-methyl-ene-tetramine and water to an aryl halide
+                      can produce these compounds, which can also be produced from the
+                      hydrolysis of an oxazine. The Sommelet reaction and the Meyers
+                      synthesis create these compounds, whose simplest version is used
+                      alongside sulfuric acid in ecstasy testing kits based on the Marquis
+                      reagent. Aryl versions of this functional group can be synthesized by
+           buzz_prob: 0.5525
+--------------------
+               guess: Gilgamesh
+              answer: Ullikummi
+                  id: 102290
+GprGuesser_confidence: -10.3071
+TfidfGuesser_confidence: 0.1095
+         Length_word: 4.7185
+        Length_guess: 2.3026
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0695
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.0695
+                text: A love goddess descends from heaven and tries to charm this figure,
+                      but an oceanic wave tells her that her attempts are in vain because
+                      this figure is both deaf and blind. This being was created to
+                      accomplish a goal that the dragon Hedamu failed to complete. A god is
+                      brought to tears after seeing this figure from the top of Mount Hazzi.
+                      Astabi leads seventy gods against this threat, but they are unable to
+                      stop this figure since it had grown into the realm of the heavenly
+                      gods from the underworld, where it perched on Upelluri. This menace
+                      was finally stopped when a copper saw was used to cut off
+           buzz_prob: 0.5512
+--------------------
+               guess: Pablo Picasso
+              answer: Henri_Rousseau
+                  id: 93268
+GprGuesser_confidence: -6.5568
+TfidfGuesser_confidence: 0.1261
+         Length_word: 4.6821
+        Length_guess: 2.6391
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0585
+WikiScore_guess_rank_rel_fs: 5
+WikiScore_guess_sim_rel_fs: 0.0585
+                text: Sylvia Plath described a figure painted by this non-Italian as coming
+                      out of "Eden's navel" in a poem describing another figure's "moony
+                      eye." This man put a row of red flowers along the bottom of a double
+                      portrait of Marie Laurencin and Guillaume Apollinaire called The Muse
+                      Inspiring the Poet. In another painting, he depicted his mistress
+                      Yadwiga with lotus flowers and a dark camouflaged man in the shadows.
+                      This painter placed a mandolin and vase on the sand under a clear
+                      night sky in a painting in which a lion "picks up [the] scent" of the
+                      title person but "does not devour her." He also painted
+           buzz_prob: 0.5493
+--------------------
+               guess: Bernhard Riemann
+              answer: Peter_Gustav_Lejeune_Dirichlet
+                  id: 93240
+GprGuesser_confidence: -9.2577
+TfidfGuesser_confidence: 0.1748
+         Length_word: 4.6913
+        Length_guess: 2.8332
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1216
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1216
+                text: The stick-breaking process is a constructive algorithm used to
+                      generate samples from a stochastic process named after this
+                      mathematician. This mathematician also names a multivariate continuous
+                      probability distribution defined on a n-dimensional simplex, which is
+                      the conjugate prior of the multinomial distribution. In analytic
+                      number theory, the Riemann zeta function is a simple non-trivial
+                      example of his type of series, which are sums over n of a-sub-n over n
+                      to a complex power s. This mathematician also names the eta function,
+                      a simple example of one of his L-functions. In contrast to Neumann
+                      boundary conditions, boundary conditions named after this man specify
+                      a function's value on the boundary
+           buzz_prob: 0.7123
+--------------------
+               guess: Franz Schubert
+              answer: Robert_Schumann
+                  id: 101989
+GprGuesser_confidence: -9.2970
+TfidfGuesser_confidence: 0.2002
+         Length_word: 4.4427
+        Length_guess: 2.7081
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0900
+WikiScore_guess_rank_rel_fs: 5
+WikiScore_guess_sim_rel_fs: 0.0900
+                text: Dominick Argento modeled From the Diary of Virginia Woolf on one of
+                      this composer's song cycles, which sets eight poems by Adalbert von
+                      Chamisso. This composer used the enigmatic marking "Im Legenden Ton"
+                      for the middle section of the first movement of his Opus 17 Fantasie.
+                      His F minor piano sonata was originally published under the title
+                      "Concerto Without Orchestra." This composer wrote a cycle of nine
+                      short piano pieces about a forest which includes "Vogel als Prophet,"
+                      as well as the song cycle
+           buzz_prob: 0.6261
+--------------------
+               guess: Joseph Stalin
+              answer: Béla_Kun
+                  id: 101971
+GprGuesser_confidence: -9.5930
+TfidfGuesser_confidence: 0.1254
+         Length_word: 4.6052
+        Length_guess: 2.6391
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0737
+WikiScore_guess_rank_rel_fs: 1
+WikiScore_guess_sim_rel_fs: 0.0737
+                text: During a meeting of the Executive of the International, this leader
+                      was repeatedly insulted by another leader for his "stupid mistakes,"
+                      such as his support of Nestor Makhno. This man's government was
+                      supported by a group of leather-jacket clad enforcers called the Lenin
+                      Boys. After being released from prison, he came to power after the
+                      issuance of the Vix Note, demanding that the eastern limits of his
+                      country be pushed inward. In collaboration with Zinoviev, he supported
+                      a failed KPD- led workers' uprising in Germany called the "March
+                      Action." He controlled most of the power as Commissar of Foreign
+           buzz_prob: 0.5523
+--------------------
+               guess: William James
+              answer: Love
+                  id: 102009
+GprGuesser_confidence: -7.3985
+TfidfGuesser_confidence: 0.1656
+         Length_word: 4.9273
+        Length_guess: 2.6391
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0539
+WikiScore_guess_rank_rel_fs: 6
+WikiScore_guess_sim_rel_fs: 0.0539
+                text: This is the first title concept of a treatise that cites the Fisher
+                      King motif in The Wasteland as an illness that is the "inability to
+                      wish." A 1956 work declares that this thing is "the only sane and
+                      satisfactory answer to the problem of human existence." A triangular
+                      theory of this phenomenon, one of whose components is commitment, was
+                      developed by Robert Sternberg. Rollo May suggested that this concept
+                      be integrated with "will" to make a human complete. A series of
+                      experiments in which rhesus monkeys became attached to wire meshes
+                      instead of their mothers are discussed in a Harry Harlow book titled
+                      for the nature of this phenomenon. Sigmund Freud used the Greek word
+                      for this thing to describe the "life instincts" that opposes thanatos,
+                      or the death instincts. For 10 points, name this human
+           buzz_prob: 0.6212
+--------------------
+               guess: Viscosity
+              answer: Glass_transition
+                  id: 102269
+GprGuesser_confidence: -9.6880
+TfidfGuesser_confidence: 0.2421
+         Length_word: 4.7958
+        Length_guess: 2.3026
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0930
+WikiScore_guess_rank_rel_fs: 5
+WikiScore_guess_sim_rel_fs: 0.0930
+                text: One parameter characterizing this phenomenon is the fragility index,
+                      which is the slope of an Angell plot. One theory describing this
+                      phenomenon states it takes place when the configurational entropy is
+                      zero, while another theory states it occurs at a precise value of the
+                      free volume. The Gibbs-DiMarzio theory describes this phenomenon.
+                      Extrapolating the entropy curve for this phenomenon paradoxically
+                      yields a zero change in entropy below a critical temperature, a result
+                      derived by Kauzmann. The temperature dependence of viscosity in this
+                      phenomenon can be measured by the Vogel-Fulcher-Tammann equation, the
+                      Doolittle equation, or the Williams-Landel-Ferry equation. In general,
+                      the temperature at which this process occurs tends to be low for an
+                      elastomer and high for a thermoplastic. It's not
+           buzz_prob: 0.7362
+--------------------
+               guess: Prime number
+              answer: Perfect_Numbers
+                  id: 93144
+GprGuesser_confidence: -10.3151
+TfidfGuesser_confidence: 0.3541
+         Length_word: 4.3567
+        Length_guess: 2.5649
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 1
+WikiScore_guess_sim_rel_fs: 0.1300
+                text: For any natural number n, there exists only one of these numbers that
+                      can be expressed in the form "n-cubed plus 1". Kanold was the first to
+                      show that the amount of these numbers below a given integer n had an
+                      asymptotic form of little-O of the square root of n. With the
+                      exception of the smallest of these, all known so far can be written as
+                      the sum of the cubes of consecutive positive odd integers.
+           buzz_prob: 0.7430
+--------------------
+               guess: Anubis
+              answer: Ancient_Egypt
+                  id: 141372
+GprGuesser_confidence: -9.0190
+TfidfGuesser_confidence: 0.1835
+         Length_word: 4.3307
+        Length_guess: 1.9459
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0546
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.0546
+                text: A god of this people transforms into a cat and uses a knife to
+                      decapitate a wicked serpent. This people's calendar includes five
+                      extra days won in a gambling match with the moon. A god of this
+                      culture asserts his superiority by ejaculating into a head of lettuce
+                      eaten by his rival. When these people die, their hearts are fed to the
+                      demon Ammit if they fail to weigh lighter than a single feather. In
+           buzz_prob: 0.5448
+--------------------
+               guess: Michelangelo
+              answer: Caravaggio
+                  id: 141323
+GprGuesser_confidence: -10.1966
+TfidfGuesser_confidence: 0.1436
+         Length_word: 4.5326
+        Length_guess: 2.5649
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0732
+WikiScore_guess_rank_rel_fs: 2
+WikiScore_guess_sim_rel_fs: 0.0732
+                text: This artist showed Samson drinking from a donkey's jawbone in a
+                      painting in which only the feet of a shrouded man are visible. Another
+                      of his paintings shows two peasant kneeling in prayer to a barefoot
+                      Mary who is on a step holding Jesus. This artist of The Seven Works of
+                      Mercy and the Loreto Madonna depicted an orange-robed man at a desk
+                      being approached by an angel in a painting made for the Contarelli
+                      Chapel. In another painting by this artist, a beam of light from the
+                      top right illuminates a
+           buzz_prob: 0.5515
+--------------------
+               guess: John the Baptist
+              answer: Peter_Waldo
+                  id: 102106
+GprGuesser_confidence: -10.5869
+TfidfGuesser_confidence: 0.1210
+         Length_word: 5.0370
+        Length_guess: 2.8332
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0596
+WikiScore_guess_rank_rel_fs: 6
+WikiScore_guess_sim_rel_fs: 0.0596
+                text: As described in the book De Nugis Curialium, one of this man's most
+                      loyal followers was questioned by Walter Map, and ridiculed when he
+                      claimed that he believed in the mother of Christ, because it was not
+                      proper to profess belief in a non-member of the Trinity. An anonymous
+                      chronicle says this man repented his sins after hearing a sermon about
+                      how St. Alexius died a blessed death, though the account of his
+                      conversion by Stephen of Bourbon does not tell that story. He sent a
+                      delegation to Pope Alexander III, who refused to legitimize his
+                      teachings, which were shortly thereafter condemned at the Council of
+                      Verona by Pope Lucius III. This man's followers were often called
+                      Sabotiers or Insabbatati for their habit of wearing wooden shoes,
+                      though they called themselves the "Poor Men of Lyon," and they
+                      preached as peddlers in the Provencál dialect. For 10 points, name
+                      this wealthy merchant who
+           buzz_prob: 0.5771
+--------------------
+               guess: Schizophrenia
+              answer: Nicotine
+                  id: 93413
+GprGuesser_confidence: -8.8495
+TfidfGuesser_confidence: 0.1890
+         Length_word: 4.6913
+        Length_guess: 2.6391
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0812
+WikiScore_guess_rank_rel_fs: 4
+WikiScore_guess_sim_rel_fs: 0.0812
+                text: The six-item Fagerstrom Test assesses the severity of this disorder.
+                      The second most common use of the antidepressant bupropion is
+                      treatment of this disorder. The drugs cytisine and varenicline treat
+                      this disorder by being partially agonistic to a type of receptor that
+                      appears on both sides of the neuromuscular junction. The non-alpha 7
+                      types of that receptor contribute to this disease by directly exciting
+                      dopaminergic and GABAergic neurons. The compound most directly
+                      responsible for this condition mimics the action of acetylcholine in
+                      namesake acetylcholine receptors. The most common way to treat this
+                      disorder is through replacement therapy in the form of gum or patches.
+                      For 10 points, name
+           buzz_prob: 0.6498
+--------------------
+               guess: Entropy
+              answer: Partition_function_(statistical_mechanics)
+                  id: 102171
+GprGuesser_confidence: -11.1828
+TfidfGuesser_confidence: 0.1722
+         Length_word: 4.8903
+        Length_guess: 2.0794
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0861
+WikiScore_guess_rank_rel_fs: 3
+WikiScore_guess_sim_rel_fs: 0.0861
+                text: The 6N-dimensional integral used to calculate this quantity can be
+                      rewritten with the assumption that the potential only includes
+                      pairwise interactions - that technique is called Mayer cluster
+                      expansion. A common technique used to solve the Ising model is to
+                      express this quantity as the trace of a product of transfer matrices.
+                      This quantity can be obtained via a path integral of the Euclidean
+                      action, which can be shown by Wick rotating the path integral used to
+                      obtain the propagator. For a system of N indistinguishable particles,
+                      the total value for this quantity equals one individual particle's
+                      value for this quantity raised to the N power divided by N factorial.
+                      The expectation value of total energy equals the negative of the
+                      derivative of the natural log of this quantity with respect to
+           buzz_prob: 0.6720
+--------------------
+               guess: Infinite Jest
+              answer: David_Foster_Wallace
+                  id: 141348
+GprGuesser_confidence: -9.0582
+TfidfGuesser_confidence: 0.3501
+         Length_word: 4.6821
+        Length_guess: 2.6391
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1900
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1900
+                text: This man claims "the capital-T Truth is about life before death" in a
+                      work that begins with a joke about two young fish swimming by an older
+                      fish. David Lipsky wrote about a road trip he took with this author in
+                      the book Although of Course You End Up Becoming Yourself. He gave a
+                      commencement address at Kenyon College that ends with the statement
+                      "this is water." A group of Quebecois "wheelchair assassins" appear in
+                      a novel by this author set during the Year of the Depend Adult
+                      Undergarment. In that novel by this author, Hal Incandenza attends the
+                      Enfield Tennis Academy. For 10 points, name this
+           buzz_prob: 0.9075
+--------------------
+               guess: Phaedo
+              answer: Phædrus
+                  id: 102312
+GprGuesser_confidence: -8.4236
+TfidfGuesser_confidence: 0.2349
+         Length_word: 4.4067
+        Length_guess: 1.9459
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0808
+WikiScore_guess_rank_rel_fs: 2
+WikiScore_guess_sim_rel_fs: 0.0808
+                text: In this Platonic dialogue, our good friend Socrates compares his
+                      surroundings, which are a "fair-resting place" featuring a chorus of
+                      cicadas, to a spot sacred to Achelous. Later, Socrates compares his
+                      words to the epitaph of Midas's tomb, whose lines can be read in any
+                      order because they do not succeed each other logically. A word that
+                      can mean "potion", "remedy", or "poison" is the starting point for
+                      Jacques Derrida's reading of this dialogue, titled "Plato's Pharmacy."
+                      In this dialogue, Socrates
+           buzz_prob: 0.6651
+--------------------
+               guess: The Grapes of Wrath
+              answer: On-to-Ottawa_Trek
+                  id: 102271
+GprGuesser_confidence: -4.8359
+TfidfGuesser_confidence: 0.2391
+         Length_word: 3.6636
+        Length_guess: 2.9957
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0855
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.0855
+                text: A play about this event, written by Tom Hawken, featured a band
+                      composed of three people who took part in it: Bobby Jackson, Ray
+                      Wainwright, and Jean Sheils, who was the daughter of a key leader in
+                      this
+           buzz_prob: 0.5547
+--------------------
+               guess: Cicero
+              answer: Catiline
+                  id: 93184
+GprGuesser_confidence: -7.3010
+TfidfGuesser_confidence: 0.2029
+         Length_word: 4.4886
+        Length_guess: 1.9459
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0666
+WikiScore_guess_rank_rel_fs: 2
+WikiScore_guess_sim_rel_fs: 0.0666
+                text: He's not Maxentius, but a supporter of this man was captured at the
+                      Milvian Bridge by Caius Pomtinus, and was named Titus Volturcius. Some
+                      allies of this man were strangled by cords in the Tullian dungeon;
+                      another ally of his had Publius Umbrenus try to gain the support of
+                      the Allobroges, who revealed his plans instead. This man may have
+                      bribed Quintus Lutatius Catulus to testify for him during his trial
+                      for adultery with a Vestal Virgin. In one speech this man was asked,
+                      "How long...will you abuse
+           buzz_prob: 0.6276
+--------------------
+               guess: The Structure of Scientific Revolutions
+              answer: Philosophy_and_the_Mirror_of_Nature
+                  id: 102076
+GprGuesser_confidence: -2.8390
+TfidfGuesser_confidence: 0.1659
+         Length_word: 4.0943
+        Length_guess: 3.6889
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1409
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.1409
+                text: This book considers if Aristotle was wrong about motion being divided
+                      into natural and force parts in the section "What Were Our Ancestors
+                      Talking About?" which examines the impossibility of finding a
+                      deterministic answer to the general question "What did they mean?"
+                      Another section of this book examines the Copernicus-Bellarmine
+                      debates and suggests that Thomas Kuhn's incommensurability thesis
+                      makes
+           buzz_prob: 0.6673
+--------------------
+               guess: The Catcher in the Rye
+              answer: Tsukuru_Tazaki
+                  id: 101985
+GprGuesser_confidence: -3.0069
+TfidfGuesser_confidence: 0.1518
+         Length_word: 4.9053
+        Length_guess: 3.1355
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0471
+WikiScore_guess_rank_rel_fs: 7
+WikiScore_guess_sim_rel_fs: 0.0471
+                text: This character and an assistant are told a story in which a man finds
+                      a jar of formaldehyde containing an adult's amputated vestigial sixth
+                      fingers. This character's roommate tells him a story in which the
+                      roommate's father encounters a jazz pianist who possesses a "death
+                      token" that allows him to see people's auras. This character has a
+                      bizarre erotic dream in which the two girls he's having sex with
+                      suddenly morph into that roommate, who later disappears and leaves
+                      this character a box set of Liszt piano suites. This character's
+                      girlfriend is a travel agent named Sara who helps him book tickets to
+                      Finland, where he meets the sculptor Edvard Haatainen. After much
+                      searching, this train station designer learns that a fabricated rape
+                      accusation was what led his college friends, who went by nicknames
+           buzz_prob: 0.6102
+--------------------
+               guess: Phaedo
+              answer: Phædrus
+                  id: 102313
+GprGuesser_confidence: -8.8101
+TfidfGuesser_confidence: 0.2145
+         Length_word: 4.5951
+        Length_guess: 1.9459
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0767
+WikiScore_guess_rank_rel_fs: 2
+WikiScore_guess_sim_rel_fs: 0.0767
+                text: In this Platonic dialogue, our good friend Socrates compares his
+                      surroundings, which are a "fair-resting place" featuring a chorus of
+                      cicadas, to a spot sacred to Achelous. Later, Socrates compares his
+                      words to the epitaph of Midas's tomb, whose lines can be read in any
+                      order because they do not succeed each other logically. A word that
+                      can mean "potion", "remedy", or "poison" is the starting point for
+                      Jacques Derrida's reading of this dialogue, titled "Plato's Pharmacy."
+                      In this dialogue, Socrates uses the image of a charioteer attempting
+                      to drive two winged horses of different qualities of stock
+           buzz_prob: 0.6672
+--------------------
+               guess: Francis of Assisi
+              answer: Peter_Waldo
+                  id: 102106
+GprGuesser_confidence: -9.0478
+TfidfGuesser_confidence: 0.1421
+         Length_word: 5.1358
+        Length_guess: 2.8904
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.0754
+WikiScore_guess_rank_rel_fs: 0
+WikiScore_guess_sim_rel_fs: 0.0754
+                text: As described in the book De Nugis Curialium, one of this man's most
+                      loyal followers was questioned by Walter Map, and ridiculed when he
+                      claimed that he believed in the mother of Christ, because it was not
+                      proper to profess belief in a non-member of the Trinity. An anonymous
+                      chronicle says this man repented his sins after hearing a sermon about
+                      how St. Alexius died a blessed death, though the account of his
+                      conversion by Stephen of Bourbon does not tell that story. He sent a
+                      delegation to Pope Alexander III, who refused to legitimize his
+                      teachings, which were shortly thereafter condemned at the Council of
+                      Verona by Pope Lucius III. This man's followers were often called
+                      Sabotiers or Insabbatati for their habit of wearing wooden shoes,
+                      though they called themselves the "Poor Men of Lyon," and they
+                      preached as peddlers in the Provencál dialect. For 10 points, name
+                      this wealthy merchant who became a beggar, and founded a namesake
+                      religious sect that co-existed with the Cathars in southern
+           buzz_prob: 0.6744
+--------------------
+               guess: Nuclear Magnetic Resonance
+              answer: Electron_excitation
+                  id: 102090
+GprGuesser_confidence: -10.3329
+TfidfGuesser_confidence: 0.1456
+         Length_word: 5.0814
+        Length_guess: 3.2958
+   WikiScore_in_wiki: 0
+       WikiScore_sim: 0
+WikiScore_guess_rank_rel_fs: 8
+WikiScore_guess_sim_rel_fs: 0.0777
+                text: In peptide bonds, one of these phenomena produces a well-characterized
+                      signal designated "NV1." The intensity of these phenomena can be
+                      increased by d-p mixing or vibronic coupling. CT complexes can undergo
+                      LMCT or MLCT examples of these phenomena. In two types of diagrams
+                      depicting these phenomena, lines become curved due to the non-crossing
+                      rule. In one set of diagrams depicting the energies of these
+                      phenomena, both axes are normalized by the Racah parameter. Examples
+                      of this kind of process include intersystem crossing, where a
+                      difference in spin multiplicity allows this kind of process to occur
+                      in a non-radiative fashion. Sandwiching the electric dipole operator
+                      between the initial and final state wavefunctions for this process can
+                      be used to derive the fact that the azimuthal quantum number must
+                      change by plus or minus one, or this process is said to be "forbidden"
+                      according to a selection rule. For 10 points, name this process by
+                      which a molecule's electrons change energy levels.
+           buzz_prob: 0.5884
+--------------------
+               guess: Total internal reflection
+              answer: Waveplate
+                  id: 102289
+GprGuesser_confidence: -8.8413
+TfidfGuesser_confidence: 0.2204
+         Length_word: 5.0106
+        Length_guess: 3.2581
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1497
+WikiScore_guess_rank_rel_fs: 1
+WikiScore_guess_sim_rel_fs: 0.1497
+                text: Tunable examples of a type of these devices include the Berek
+                      compensator and the Soleil-Babinet compensator. Spatial hole burning
+                      in continuous wave lasers can be avoided by placing two of these
+                      devices on either side of the gain medium, a process called a
+                      "twisted-mode technique." An alternative to one type of these devices
+                      is the Fresnel rhomb. The amount of retardation is a multiple of two
+                      pi larger in a "multiple-order" one of these devices than in a "zero-
+                      order" one of these devices. In one type of these devices, the waves
+                      propagating parallel to the "fast axis" acquire a phase shift of pi
+                      over 2 with respect to waves propagating parallel to the "slow axis,"
+                      because the index of refraction is split into "ordinary" and
+                      "extraordinary" components. A birefringent crystal which converts
+                      linearly polarized light to circularly polarized light is an example
+                      of, for 10 points, what type of
+           buzz_prob: 0.8276
+--------------------
+               guess: Neutrino
+              answer: Muons
+                  id: 102346
+GprGuesser_confidence: -8.3854
+TfidfGuesser_confidence: 0.1502
+         Length_word: 4.8283
+        Length_guess: 2.1972
+   WikiScore_in_wiki: 1
+       WikiScore_sim: 0.1353
+WikiScore_guess_rank_rel_fs: 1
+WikiScore_guess_sim_rel_fs: 0.1353
+                text: A 2004 experiment used the decay of these particles to confirm the
+                      Standard Model's prediction that the Michel rho param- eter equals
+                      0.75; that experiment, which confirms the V-A structure of the weak
+                      force, was done by the TWIST collaboration. This particle's decay is
+                      also used to measure the Fermi constant characterizing the strength of
+                      the weak force. Because these particles are not stopped by
+                      electromagnetic or hadronic calorimeters, the ATLAS and CMS
+                      experiments have a separate spec- trometer solely for detection of
+                      these particles. Charged pions decay into one of these particles and a
+                      neutrino. These particles are very useful for performing time dilation
+                      experiments since their half-life is around 2.2 microseconds. It's not
+                      the positron, but Carl Anderson discovered this particle in
+           buzz_prob: 0.7460
+--------------------

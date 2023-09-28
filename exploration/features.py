@@ -115,17 +115,111 @@ class WikipediaFeature(Feature):
     def __init__(self, name):
         from buzzer import normalize_answer
         self.normalize = normalize_answer
-        self.name = name
-        from sklearn.feature_extraction.text import TfidfVectorizer
-        with open('./data/wiki_page_text.json', 'r') as f:
-        # with open('/home/neal/nlp-hw/feateng/data/wiki_page_text.json', 'r') as f:
-            wiki = json.load(f)
-        self.vec = TfidfVectorizer()
-        wiki = [p for p in wiki if p is not None and p['page'] is not None and p['text'] is not None]
-        self.doc_names = [self.normalize(clean(p['page'])) for p in wiki]
-        self.docs = self.vec.fit_transform([clean(p['text']) for p in wiki])
 
+        # init params
+        self.name = name
         self.matches = 10
+        self.min_df = 1
+        self.max_df = 1.0
+
+        # self.train()
+        # self.save()
+        self.load()
+
+    def train(self):
+        from nltk.corpus import stopwords
+        nltk.download('stopwords')
+        from sklearn.feature_extraction.text import TfidfVectorizer
+        stop = list(stopwords.words('english'))
+        # loading wiki data
+        with open('../data/wiki_page_text.json', 'r') as f:
+            wiki = json.load(f)
+        wiki = [p for p in wiki if p is not None and p['page'] is not None and p['text'] is not None]
+
+        # ##################################
+        # # for debug
+        # from sklearn.metrics.pairwise import cosine_similarity
+        # import random
+        # import numpy as np
+        # random.shuffle(wiki)
+        # train_cnt = int(0.8*len(wiki))
+        # train_wiki = wiki[:train_cnt]
+        # test_wiki = wiki[train_cnt:]
+
+        # # train
+        # self.doc_names = [self.normalize(clean(p['page'])) for p in train_wiki]
+        # self.clean_docs = [clean(p['text']) for p in train_wiki]
+
+        # # initialize tfidf vec for wiki
+        # self.vec = TfidfVectorizer(min_df=self.min_df, max_df=self.max_df, stop_words=stop, sublinear_tf=True, ngram_range=(1,2))
+        # self.docs = self.vec.fit_transform(self.clean_docs)
+
+        # # test
+        # self.doc_names_t = [self.normalize(clean(p['page'])) for p in test_wiki]
+        # self.clean_docs_t = [clean(p['text']) for p in test_wiki]
+        # self.guess = self.vec.transform(self.clean_docs_t)
+
+        # cos_sim = cosine_similarity(self.guess, self.docs)
+        # cos_sim_idx = np.argsort(cos_sim, axis=-1)[:, ::-1]
+        # top_hits = cos_sim_idx[:, :self.matches]
+        # hit = 0
+        # for idx, ans in enumerate(self.doc_names_t):
+        #     # related_sim = cos_sim[idx, top_hits]
+        #     related_labels = [self.doc_names[i] for i in top_hits[idx]]
+        #     if ans in related_labels:
+        #         hit += 1
+        #         print(ans)
+        # print(hit)
+        # print('stop')
+        # ##################################
+
+        # Wiki data:
+        # {'page':xx, 'text':'xxx}
+        # normalize wiki data
+        self.doc_names = [self.normalize(clean(p['page'])) for p in wiki]
+        self.clean_docs = [clean(p['text']) for p in wiki]
+
+        # initialize tfidf vec for wiki
+        self.vec = TfidfVectorizer(stop_words=stop, sublinear_tf=True)
+        self.docs = self.vec.fit_transform(self.clean_docs)
+
+    def save(self):
+        """
+        Save the parameters to disk
+        """
+        import pickle
+        import os
+        path = 'models/Wiki_TfidfVec'
+        os.makedirs(path, exist_ok=True)
+        with open("%s.vectorizer.pkl" % path, 'wb') as f:
+            pickle.dump(self.vec, f)
+        
+        with open("%s.tfidf.pkl" % path, 'wb') as f:
+            pickle.dump(self.docs, f)
+
+        with open("%s.questions.pkl" % path, 'wb') as f:
+            pickle.dump(self.clean_docs, f)
+
+        with open("%s.answers.pkl" % path, 'wb') as f:
+            pickle.dump(self.doc_names, f)
+
+    def load(self):
+        """
+        Load the tf-idf vectorizer from a file
+        """
+        import pickle
+        path = 'models/Wiki_TfidfVec'
+        with open("%s.vectorizer.pkl" % path, 'rb') as f:
+            self.vec = pickle.load(f)
+        
+        with open("%s.tfidf.pkl" % path, 'rb') as f:
+            self.docs = pickle.load(f)
+
+        with open("%s.questions.pkl" % path, 'rb') as f:
+            self.clean_docs = pickle.load(f)
+
+        with open("%s.answers.pkl" % path, 'rb') as f:
+            self.doc_names = pickle.load(f)
 
     def __call__(self, question, run, guess):
         norm_guess = self.normalize(guess)
@@ -134,6 +228,7 @@ class WikipediaFeature(Feature):
         in_wiki = int(norm_guess in self.doc_names)
         yield ('in_wiki', int(norm_guess in self.doc_names))
         
+        # get tf vector for question
         tf_q = self.vec.transform([run])
         if in_wiki:
             # similarity between guess and wiki page
@@ -144,8 +239,6 @@ class WikipediaFeature(Feature):
             yield ('sim', sim)
         else:
             yield ('sim', 0)
-        # get question first sentence
-        tf_q = self.vec.transform([run])
 
         # get similar Wikipedia sentences by tfidf
         cos_sim = linear_kernel(tf_q, self.docs).flatten()
