@@ -1,7 +1,7 @@
 Pure GprGuesser:
-GprGuesser_confidence: 0.0394
-        Length_guess: -0.1312
-        Length_word: 0.8194
+                GprGuesser_confidence: 0.0394
+                        Length_guess: -0.1312
+                        Length_word: 0.8194
 Questions Right: 160 (out of 4468) Accuracy: 0.78,  Buzz ratio: 19.5 Buzz position: 316.88
 
 GprGuesser + tfidf guesser:
@@ -10,3 +10,16 @@ GprGuesser + tfidf guesser:
                              Length_word: 0.9746
                  TfidfGuesser_confidence: 6.0836
 Questions Right: 221 (out of 4468) Accuracy: 0.79,  Buzz ratio: 66.5 Buzz position: 251.07
+
+GprGuesser + tfidf guesser:
+                   GprGuesser_confidence: 0.0314
+                            Length_guess: -0.0719
+                             Length_word: 0.7870
+                 TfidfGuesser_confidence: 4.5529
+             WikiScore_guess_rank_rel_fs: -0.0115
+              WikiScore_guess_sim_rel_fs: 3.6596
+                       WikiScore_in_wiki: -0.1562
+                           WikiScore_sim: 4.6034
+Questions Right: 290 (out of 4468) Accuracy: 0.8,  Buzz ratio: 133.0 Buzz position: 272.19
+
+
