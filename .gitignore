@@ -163,3 +163,5 @@ cython_debug/
 *.pkl
 
 models/*
+
+wiki_page_text.json
