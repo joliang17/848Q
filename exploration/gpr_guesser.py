@@ -12,6 +12,9 @@ import logging
 from baseconv import BaseConverter
 
 kCACHE_MISS = "CACHE_MISS"
+
+import nltk
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 from guesser import alphanum
 

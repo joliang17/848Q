@@ -28,6 +28,7 @@ def add_question_params(parser):
     parser.add_argument('--expo_output_root', default="expo/expo", type=str)
 
 def add_buzzer_params(parser):
+    # parser.add_argument('--buzzer_guessers', nargs='+', default = ['GprGuesser', 'TfidfGuesser', 'BERTGuesser'], help='Guessers to feed into Buzzer', type=str) 
     parser.add_argument('--buzzer_guessers', nargs='+', default = ['GprGuesser', 'TfidfGuesser'], help='Guessers to feed into Buzzer', type=str) 
     parser.add_argument('--features', nargs='+', help='Features to feed into Buzzer', type=str,  default=['Length', 'WikiScore'])    
     parser.add_argument('--buzzer_type', type=str, default="LogisticBuzzer")
