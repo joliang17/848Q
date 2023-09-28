@@ -20,21 +20,22 @@ def add_general_params(parser):
     print("Setting up logging")
 
 def add_question_params(parser):
-    parser.add_argument('--limit', type=int, default=-1)
-    parser.add_argument('--question_source', type=str, default='json')
-    parser.add_argument('--questions', default = "../data/qanta.guesstrain.json",type=str)
-    parser.add_argument('--secondary_questions', default = "../data/qanta.guessdev.json",type=str)
+    parser.add_argument('--limit', type=int, default=500)
+    parser.add_argument('--question_source', type=str, default='gzjson')
+    # parser.add_argument('--questions', default = "../data/qanta.buzztrain.json.gz",type=str)
+    parser.add_argument('--questions', default = "../data/qanta.buzzdev.json.gz",type=str)
+    parser.add_argument('--secondary_questions', default = "../data/qanta.guessdev.json.gz",type=str)
     parser.add_argument('--expo_output_root', default="expo/expo", type=str)
 
 def add_buzzer_params(parser):
-    parser.add_argument('--buzzer_guessers', nargs='+', default = ['TfidfGuesser'], help='Guessers to feed into Buzzer', type=str)
+    parser.add_argument('--buzzer_guessers', nargs='+', default = ['GprGuesser'], help='Guessers to feed into Buzzer', type=str)  # TODO: could add
     parser.add_argument('--features', nargs='+', help='Features to feed into Buzzer', type=str,  default=['Length'])    
     parser.add_argument('--buzzer_type', type=str, default="LogisticBuzzer")
     parser.add_argument('--run_length', type=int, default=100)
     parser.add_argument('--LogisticBuzzer_filename', type=str, default="models/LogisticBuzzer")    
     
 def add_guesser_params(parser):
-    parser.add_argument('--guesser_type', type=str, default="TfidfGuesser")
+    parser.add_argument('--guesser_type', type=str, default="GprGuesser")
     # TODO (jbg): This is more general than tfidf, make more general (currently being used by DAN guesser as well)
     parser.add_argument('--tfidf_min_length', type=int, help="How long (in characters) must text be before it is indexed?", default=50)
     parser.add_argument('--tfidf_max_length', type=int, help="How long (in characters) must text be to be removed?", default=500)    
@@ -43,7 +44,7 @@ def add_guesser_params(parser):
     parser.add_argument('--guesser_answer_field', type=str, default="page", help="Where is the cannonical answer")
     parser.add_argument('--TfidfGuesser_filename', type=str, default="models/TfidfGuesser")
     parser.add_argument('--WikiGuesser_filename', type=str, default="models/WikiGuesser")    
-    parser.add_argument('--GprGuesser_filename', type=str, default="models/GprGuesser")
+    parser.add_argument('--GprGuesser_filename', type=str, default="../models/gpt_cache.tar.gz")
     parser.add_argument('--wiki_zim_filename', type=str, default="data/wikipedia.zim")
     parser.add_argument('--num_guesses', type=int, default=25)
 
@@ -194,4 +195,21 @@ def load_buzzer(flags, load=False):
             from features import LengthFeature
             feature = LengthFeature(ff)
             buzzer.add_feature(feature)
+        if ff == "Frequency":
+            from features import FrequencyFeature
+            feature = FrequencyFeature(ff)
+            buzzer.add_feature(feature)
+        if ff == "GuessBlank":
+            from features import GuessBlankFeature
+            feature = GuessBlankFeature(ff)
+            buzzer.add_feature(feature)
+        if ff == "WikiScore":
+            from features import WikipediaFeature
+            feature = WikipediaFeature(ff)
+            buzzer.add_feature(feature)
+        if ff == 'GuessinQuestion':
+            from features import GuessinQuestionFeature
+            feature = GuessinQuestionFeature(ff)
+            buzzer.add_feature(feature)
     return buzzer
+

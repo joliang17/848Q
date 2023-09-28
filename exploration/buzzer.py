@@ -293,7 +293,7 @@ class Buzzer:
         assert len(self._features) == len(self._questions), "Features not built.  Did you run build_features?"
         X = self._featurizer.transform(self._features)
 
-        return self._classifier.predict(X), X, self._features, self._correct, self._metadata
+        return self._classifier.predict(X), self._classifier.predict_proba(X), X, self._features, self._correct, self._metadata
     
     def load(self):
         """

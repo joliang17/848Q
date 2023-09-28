@@ -9,6 +9,9 @@ from math import log
 from sklearn.metrics.pairwise import linear_kernel
 import gzip
 import json
+import nltk
+from nltk.corpus import wordnet
+nltk.download('wordnet')
 
 class Feature:
     """
@@ -32,8 +35,8 @@ class LengthFeature(Feature):
     """
 
     def __call__(self, question, run, guess):
-        # How many characters long is the question?
-        yield ("char", log(1 + len(run)))
+        # # How many characters long is the question?
+        # yield ("char", log(1 + len(run)))
 
         # How many words long is the question?
         yield ("word", log(1 + len(run.split())))
@@ -64,6 +67,25 @@ class FrequencyFeature:
 
     def __call__(self, question, run, guess):
         yield ("guess", log(1 + self.counts[self.normalize(guess)]))
+
+
+class GuessinQuestionFeature(Feature):
+    """
+    Is guess included in the question?
+    """
+    def __init__(self, name):
+        self.name = name
+        from buzzer import normalize_answer
+        self.normalize = normalize_answer
+
+    def __call__(self, question, run, guess):
+        norm_guess = self.normalize(guess)
+        guess_word = norm_guess.split(' ')
+        q_word = run.split(' ')
+        len_interact = len(set(q_word).intersection(set(guess_word)))
+        prop_interact = len_interact/len(guess_word)
+        yield ('guessinq', prop_interact)
+
 
 class GuessBlankFeature(Feature):
     """
@@ -101,9 +123,9 @@ class WikipediaFeature(Feature):
         self.vec = TfidfVectorizer()
         wiki = [p for p in wiki if p is not None and p['page'] is not None and p['text'] is not None]
         self.doc_names = [self.normalize(clean(p['page'])) for p in wiki]
-        # self.docs = self.vec.fit_transform([clean(p['text']) for p in wiki])
+        self.docs = self.vec.fit_transform([clean(p['text']) for p in wiki])
 
-        # self.matches = 10
+        self.matches = 10
 
     def __call__(self, question, run, guess):
         norm_guess = self.normalize(guess)
@@ -112,7 +134,7 @@ class WikipediaFeature(Feature):
         in_wiki = int(norm_guess in self.doc_names)
         yield ('in_wiki', int(norm_guess in self.doc_names))
         
-        tf_q = self.vec.transform([question['first_sentence']])
+        tf_q = self.vec.transform([run])
         if in_wiki:
             # similarity between guess and wiki page
             idx = self.doc_names.index(norm_guess)
@@ -123,7 +145,7 @@ class WikipediaFeature(Feature):
         else:
             yield ('sim', 0)
         # get question first sentence
-        tf_q = self.vec.transform([question['first_sentence']])
+        tf_q = self.vec.transform([run])
 
         # get similar Wikipedia sentences by tfidf
         cos_sim = linear_kernel(tf_q, self.docs).flatten()

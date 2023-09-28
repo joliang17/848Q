@@ -87,16 +87,18 @@ class GprGuesser(Guesser):
             # TODO: call openai api here
             # result: [{"guess": "?", "confidence": 0.0}]
             # prompt = f"Question answering:\nQuestion: {question}"
-            prompt = f"Quiz Bowl:\nQuestion: {question}"
-
-            # # #######################
-            # # # GPT3
-            # self.model = 'gpt-3.5-turbo'
-            # response = openai.ChatCompletion.create(model=self.model, n=n_guesses, messages=[{"role": "system", "content": ''}, {"role": "user", "content": prompt}])
+            #######################
+            # GPT3
+            self.model = 'gpt-3.5-turbo'
+            prompt = f"Quiz Bowl:\nQuestion: {question}, return top {n_guesses} answer for it"
+            response = openai.ChatCompletion.create(model=self.model, n=n_guesses, messages=[{"role": "system", "content": ''}, {"role": "user", "content": prompt}])
 
             #######################
             # Other
-            response = openai.Completion.create(engine=self.model, prompt=prompt, max_tokens=self.max_token, best_of=n_guesses, n=n_guesses)
+            # prompt = f"Quiz Bowl:\nQuestion: {question}"
+            # response = openai.Completion.create(engine=self.model, prompt=prompt, max_tokens=self.max_token, best_of=n_guesses, n=n_guesses)
+            #######################
+
             selected_resp = response.choices[:n_guesses]
             if len(selected_resp) == 0:
                 result = kCACHE_MISS
@@ -105,7 +107,10 @@ class GprGuesser(Guesser):
                 result = []
                 for choc in selected_resp:
                     # TODO: Where to get confidence score
-                    generated_text = choc.text.replace("Answer: ", '').strip()
+                    if self.model == 'gpt-3.5-turbo':
+                        generated_text = choc['message']['content']
+                    else:
+                        generated_text = choc.text.replace("Answer: ", '').strip()
                     result.append({"guess": generated_text, "confidence": 1.0})
                     
             if result != kCACHE_MISS:
@@ -173,10 +178,6 @@ class GprGuesser(Guesser):
         return self.cache
 
 
-
-
-    
-
 if __name__ == "__main__":
     import gzip
     import logging
@@ -187,7 +188,7 @@ if __name__ == "__main__":
     gg = GprGuesser(cache_filename="models/gpt_cache.tar.gz")
     gg.load()
 
-    with gzip.open("data/qanta.buzztrain.json.gz") as infile:
+    with gzip.open("data/qanta.buzzdev.json.gz") as infile:
         questions = json.load(infile)
 
     misses = 0
@@ -198,7 +199,7 @@ if __name__ == "__main__":
             if hit:
                 hits += 1
             else:
-                print(rr)
+                # print(rr)
                 misses += 1
 
     print("---------------------")

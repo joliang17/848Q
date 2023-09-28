@@ -4,6 +4,7 @@
 # Run an evaluation on a QA system and print results
 import random
 from tqdm import tqdm
+import numpy as np
 
 from buzzer import rough_compare
 
@@ -99,7 +100,7 @@ def eval_buzzer(buzzer, questions):
     buzzer.add_data(questions)
     buzzer.build_features()
     
-    predict, feature_matrix, feature_dict, correct, metadata = buzzer.predict(questions)
+    predict, pred_score, feature_matrix, feature_dict, correct, metadata = buzzer.predict(questions)
 
     # Keep track of how much of the question you needed to see before
     # answering correctly
@@ -108,12 +109,13 @@ def eval_buzzer(buzzer, questions):
     
     outcomes = Counter()
     examples = defaultdict(list)
-    for buzz, guess_correct, features, meta in zip(predict, correct, feature_dict, metadata):
+    for buzz, buzz_score, guess_correct, features, meta in zip(predict, pred_score, correct, feature_dict, metadata):
         qid = meta["id"]
         
         # Add back in metadata now that we have prevented cheating in feature creation        
         for ii in meta:
             features[ii] = meta[ii]
+        features['buzz_prob'] = buzz_score[1]
 
         # Keep track of the longest run we saw for each question
         question_length[qid] = max(question_length[qid], len(meta["text"]))
@@ -138,10 +140,12 @@ def eval_buzzer(buzzer, questions):
             else:
                 outcomes["waiting"] += 1
                 examples["waiting"].append(features)
+
     unseen_characters = 0.0
-    for question in question_length:
-        length = question_length[question]
-        unseen_characters += (length - question_unseen[question]) / length
+    for qid in question_length:
+        length = question_length[qid]
+        if qid in question_unseen:  # buzzed
+            unseen_characters += (length - question_unseen[qid]) / length
     return outcomes, examples, unseen_characters
                 
 
@@ -175,22 +179,45 @@ if __name__ == "__main__":
         assert False, "Gotta evaluate something"
         
     total = sum(outcomes[x] for x in outcomes if x != "hit")
+    with open('temp.txt', 'w') as f:
+        for ii in outcomes:
+            print("%s %0.2f\n===================\n" % (ii, outcomes[ii] / total))
+            f.write("%s %0.2f\n===================\n" % (ii, outcomes[ii] / total))
+            if len(examples[ii]) > 30:
+                population = list(random.sample(examples[ii], 30))
+            else:
+                population = examples[ii]
+            for jj in population:
+                print(pretty_feature_print(jj))
+                f.write(pretty_feature_print(jj) + '\n')
+            print("=================") 
+
     for ii in outcomes:
-        print("%s %0.2f\n===================\n" % (ii, outcomes[ii] / total))
-        if len(examples[ii]) > 10:
-            population = list(random.sample(examples[ii], 10))
-        else:
-            population = examples[ii]
-        for jj in population:
-            print(pretty_feature_print(jj))
-        print("=================")
+        print("%s %0.2f\n" % (ii, outcomes[ii] / total))
+        # print("%s %0.2f\n===================\n" % (ii, outcomes[ii] / total))
+        # if len(examples[ii]) > 10:
+        #     population = list(random.sample(examples[ii], 10))
+        # else:
+        #     population = examples[ii]
+        # for jj in population:
+        #     print(pretty_feature_print(jj))
+        # print("=================")
         
     if flags.evaluate == "buzzer":
-        for weight, feature in zip(buzzer._classifier.coef_[0], buzzer._featurizer.feature_names_):
+        print(buzzer._classifier.coef_)
+        for weight, feature in zip(buzzer._classifier.coef_[1], buzzer._featurizer.feature_names_):
             print("%40s: %0.4f" % (feature.strip(), weight))
         
-        print("Questions Right: %i (out of %i) Accuracy: %0.2f  Buzz ratio: %0.2f Buzz position: %f" %
-              (outcomes["best"], total, (outcomes["best"] + outcomes["waiting"]) / total,
-               outcomes["best"] - outcomes["aggressive"] * 0.5, unseen))
+        acc = (outcomes["best"] + outcomes["waiting"]) / total
+        buzz_ratio = outcomes["best"] - outcomes["aggressive"] * 0.5
+        buzz_position = unseen
+        
+        print(f"Questions Right: {outcomes['best']} (out of {total}) Accuracy: {np.round(acc, 2)},  Buzz ratio: {np.round(buzz_ratio, 2)} Buzz position: {np.round(buzz_position, 2)}")
+
+        # print("Questions Right: %i (out of %i) Accuracy: %0.2f  Buzz ratio: %0.2f Buzz position: %f" %
+        #       (outcomes["best"], total, (outcomes["best"] + outcomes["waiting"]) / total,
+        #        outcomes["best"] - outcomes["aggressive"] * 0.5, unseen))
     elif flags.evaluate == "guesser":
         print("Precision @1: %0.4f Recall: %0.4f" % (outcomes["hit"]/total, outcomes["close"]/total))
+
+    exit(0)
