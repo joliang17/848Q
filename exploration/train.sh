@@ -32,7 +32,7 @@ python3 buzzer.py \
     --questions=../data/qanta.buzztrain.json.gz \
     --run_length=100 \
     --features Length WikiScore \
-    --buzzer_guessers GprGuesser TfidfGuesser
+    --buzzer_guessers GprGuesser TfidfGuesser 
 
 # eval buzzer
 python3 eval.py \

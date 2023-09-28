@@ -42,6 +42,7 @@ def add_guesser_params(parser):
     parser.add_argument('--tfidf_split_sentence', type=bool, default=True, help="Index sentences rather than paragraphs")
     parser.add_argument('--wiki_min_frequency', type=int, help="How often must wiki page be an answer before it is used", default=10)
     parser.add_argument('--guesser_answer_field', type=str, default="page", help="Where is the cannonical answer")
+    parser.add_argument('--BertGuesser_filename', type=str, default="models/BertGuesser")
     parser.add_argument('--TfidfGuesser_filename', type=str, default="models/TfidfGuesser")
     parser.add_argument('--WikiGuesser_filename', type=str, default="models/WikiGuesser")    
     parser.add_argument('--GprGuesser_filename', type=str, default="../models/gpt_cache.tar.gz")
@@ -123,6 +124,9 @@ def instantiate_guesser(guesser_type, flags, load):
         guesser = TfidfGuesser(flags.TfidfGuesser_filename)  
         if load:                                             
             guesser.load()
+    if guesser_type == "BERTGuesser":
+        from bert_guesser import BertEnhancedTfidfGuesser        
+        guesser = BertEnhancedTfidfGuesser(flags.BertGuesser_filename)  
     if guesser_type == "DanGuesser":                                
         from dan_guesser import DanGuesser                          
         guesser = DanGuesser(filename=flags.DanGuesser_filename, answer_field=flags.guesser_answer_field, min_token_df=flags.DanGuesser_min_df, max_token_df=flags.DanGuesser_max_df,
