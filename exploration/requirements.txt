@@ -13,3 +13,4 @@ sklearn
 bs4
 scikit-learn
 transformers
+datasets

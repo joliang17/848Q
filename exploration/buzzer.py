@@ -253,8 +253,6 @@ class Buzzer:
             logging.debug(str((correct, guess, answer)))
                 
             self._correct.append(correct)
-
-                
             assert len(self._correct) == len(self._features)
             assert len(self._correct) == len(self._metadata)
         
@@ -321,7 +319,9 @@ class Buzzer:
         assert len(self._features) == len(self._correct)        
         self._featurizer = DictVectorizer(sparse=True)
         X = self._featurizer.fit_transform(self._features)
-        return X
+        metadata = self._metadata
+        labeldata = self._correct
+        return X, metadata, labeldata
 
 if __name__ == "__main__":
     # Train a simple model on QB data, save it to a file
