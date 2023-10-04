@@ -7,10 +7,15 @@ import argparse
 import string
 import logging
 import pickle
+import pandas as pd
 
 from sklearn.feature_extraction import DictVectorizer
+from sklearn.linear_model import LogisticRegression
+from transformers import BertTokenizer, BertModel, BertForSequenceClassification, TrainingArguments, Trainer, pipeline
+
 from unidecode import unidecode
 from tqdm import tqdm
+from datasets import Dataset, load_metric, DatasetDict
 
 from collections import Counter
 from collections import defaultdict
@@ -290,8 +295,16 @@ class Buzzer:
         assert self._featurizer, "Featurizer not defined"
         assert len(self._features) == len(self._questions), "Features not built.  Did you run build_features?"
         X = self._featurizer.transform(self._features)
-
-        return self._classifier.predict(X), self._classifier.predict_proba(X), X, self._features, self._correct, self._metadata
+        if isinstance(self._classifier, LogisticRegression):
+            return self._classifier.predict(X), X, self._features, self._correct, self._metadata
+        else:
+            clf = pipeline("text-classification", model=self._classifier, tokenizer=self.bert_tokenizer)
+            input_seq = [self._metadata[i]['guess'] + '[SEP]' + self._metadata[i]['text'] for i in range(len(self._metadata))]
+            results = clf(input_seq)
+            predict_result = [item['label'] == 'LABEL_1' for item in results]
+            predict_score = [item['score'] for item in results]
+        
+            return predict_result, X, self._features, self._correct, self._metadata
     
     def load(self):
         """
