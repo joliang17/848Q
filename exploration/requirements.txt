@@ -14,3 +14,4 @@ bs4
 scikit-learn
 transformers
 datasets
+sentence_transformers

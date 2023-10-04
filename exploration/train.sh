@@ -2,7 +2,7 @@
 
 # guesser_size=40000
 guesser_size=50000
-buzzer_size=500
+buzzer_size=2000
 
 # #####################
 # # GprGuesser (already trained by default)
@@ -12,34 +12,56 @@ buzzer_size=500
 # # eval guesser
 # python3 eval.py --evaluate=guesser --guesser_type=GprGuesser --question_source=gzjson --questions=../data/qanta.guessdev.json.gz --limit=500 
 
-# #####################
-# # TfidfGuesser
+#####################
+# TfidfGuesser v1
 # # train guesser
 # python3 guesser.py --guesser_type=TfidfGuesser --question_source=gzjson --questions=../data/qanta.guesstrain.json.gz --logging_file=guesser.log --limit=${guesser_size}
 
 # # eval guesser
 # python3 eval.py --evaluate=guesser --guesser_type=TfidfGuesser --question_source=gzjson --questions=../data/qanta.guessdev.json.gz --limit=500 
 
+# # #####################
+# # # TfidfGuesser v2
+
+# # Run the first command
+# python3 guesser.py \
+#     --guesser_type=TfidfGuesser \
+#     --question_source=gzjson \
+#     --questions=../data/qanta.guesstrain.json.gz \
+#     --logging_file=guesser.log \
+#     --limit=200000  > guesser_train.txt
+
+# # Run the second command
+# python3 eval.py \
+#     --evaluate=guesser \
+#     --guesser_type=TfidfGuesser \
+#     --question_source=gzjson \
+#     --questions=../data/qanta.guessdev.json.gz \
+#     --limit=300000  > guesser_eval.txt
+
+
 #####################
 # train buzzer
 
 # gpt cache guesser
 python3 buzzer.py \
-    --guesser_type=GprGuesser \
+    --buzzer_type=LogisticBuzzer \
     --limit=${buzzer_size}  \
     --question_source=gzjson \
-    --GprGuesser_filename=../models/gpt_cache.tar.gz \
     --questions=../data/qanta.buzztrain.json.gz \
     --run_length=100 \
-    --features Length WikiScore \
-    --buzzer_guessers GprGuesser TfidfGuesser 
+    --features Length \
+    --buzzer_guessers GprGuesser TfidfGuesser \
+    --GprGuesser_filename=../models/gpt_cache.tar.gz
+    # --features Length WikiScore \
 
 # eval buzzer
-python3 eval.py \
-    --evaluate=buzzer \
-    --question_source=gzjson \
-    --questions=../data/qanta.buzzdev.json.gz \
-    --limit=500 \
-    --GprGuesser_filename=../models/gpt_cache.tar.gz \
-    --features Length WikiScore \
-    --buzzer_guessers GprGuesser TfidfGuesser
+# python3 eval.py \
+#     --buzzer_type=LogisticBuzzer \
+#     --evaluate=buzzer \
+#     --question_source=gzjson \
+#     --questions=../data/qanta.buzzdev.json.gz \
+#     --limit=500 \
+#     --features Length \
+#     --buzzer_guessers GprGuesser TfidfGuesser \
+#     --GprGuesser_filename=../models/gpt_cache.tar.gz > buzzer_eval.out

@@ -1,7 +1,5 @@
 import torch
 from transformers import BertTokenizer, BertModel
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
 from tfidf_guesser import *
 
 

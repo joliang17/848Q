@@ -20,7 +20,7 @@ def add_general_params(parser):
     print("Setting up logging")
 
 def add_question_params(parser):
-    parser.add_argument('--limit', type=int, default=100)
+    parser.add_argument('--limit', type=int, default=500)
     parser.add_argument('--question_source', type=str, default='gzjson')
     # parser.add_argument('--questions', default = "../data/qanta.buzztrain.json.gz",type=str)
     parser.add_argument('--questions', default = "../data/qanta.buzzdev.json.gz",type=str)
@@ -29,14 +29,17 @@ def add_question_params(parser):
 
 def add_buzzer_params(parser):
     # parser.add_argument('--buzzer_guessers', nargs='+', default = ['GprGuesser', 'TfidfGuesser', 'BERTGuesser'], help='Guessers to feed into Buzzer', type=str) 
+    # parser.add_argument('--buzzer_guessers', nargs='+', default = ['GprGuesser', ], help='Guessers to feed into Buzzer', type=str) 
     parser.add_argument('--buzzer_guessers', nargs='+', default = ['GprGuesser', 'TfidfGuesser'], help='Guessers to feed into Buzzer', type=str) 
-    parser.add_argument('--features', nargs='+', help='Features to feed into Buzzer', type=str,  default=['Length', 'WikiScore'])    
+    # parser.add_argument('--features', nargs='+', help='Features to feed into Buzzer', type=str,  default=['Length', 'WikiScore'])    
+    parser.add_argument('--features', nargs='+', help='Features to feed into Buzzer', type=str,  default=['Length'])    
     parser.add_argument('--buzzer_type', type=str, default="LogisticBuzzer")
     parser.add_argument('--run_length', type=int, default=100)
     parser.add_argument('--LogisticBuzzer_filename', type=str, default="models/LogisticBuzzer")    
+    parser.add_argument('--BertBuzzer_filename', type=str, default="models/BertBuzzer")    
     
 def add_guesser_params(parser):
-    parser.add_argument('--guesser_type', type=str, default="GprGuesser")
+    parser.add_argument('--guesser_type', type=str, default="TfidfGuesser")
     # TODO (jbg): This is more general than tfidf, make more general (currently being used by DAN guesser as well)
     parser.add_argument('--tfidf_min_length', type=int, help="How long (in characters) must text be before it is indexed?", default=50)
     parser.add_argument('--tfidf_max_length', type=int, help="How long (in characters) must text be to be removed?", default=500)    
@@ -166,6 +169,9 @@ def load_buzzer(flags, load=False):
     if flags.buzzer_type == "LogisticBuzzer":
         from logistic_buzzer import LogisticBuzzer
         buzzer = LogisticBuzzer(flags.LogisticBuzzer_filename, flags.run_length, flags.num_guesses)
+    if flags.buzzer_type == "BertBuzzer":
+        from bert_buzzer import BertBuzzer
+        buzzer = BertBuzzer(flags.BertBuzzer_filename, flags.run_length, flags.num_guesses)
 
     if load:
         buzzer.load()

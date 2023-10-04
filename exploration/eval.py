@@ -5,7 +5,8 @@
 import random
 from tqdm import tqdm
 import numpy as np
-
+import pickle
+import logging
 from buzzer import rough_compare
 
 from params import load_guesser, load_questions, load_buzzer, \
@@ -104,9 +105,9 @@ def eval_buzzer(buzzer, questions, dump_buzze_predictions=True):
     buzzer.add_data(questions)
     buzzer.build_features()
     
-    predict, pred_score, feature_matrix, feature_dict, correct, metadata = buzzer.predict(questions)
+    predict, feature_matrix, feature_dict, correct, metadata = buzzer.predict(questions)
     if dump_buzze_predictions:
-        pickle.dump([predict, pred_score, feature_matrix, feature_dict, correct, metadata], 
+        pickle.dump([predict, feature_matrix, feature_dict, correct, metadata], 
                                     open('models/buzzer_predict.pkl', 'wb'))
 
     # Keep track of how much of the question you needed to see before
@@ -116,12 +117,13 @@ def eval_buzzer(buzzer, questions, dump_buzze_predictions=True):
     
     outcomes = Counter()
     examples = defaultdict(list)
-    for buzz, buzz_score, guess_correct, features, meta in zip(predict, pred_score, correct, feature_dict, metadata):
+    for buzz, guess_correct, features, meta in zip(predict, correct, feature_dict, metadata):
         qid = meta["id"]
         
         # Add back in metadata now that we have prevented cheating in feature creation        
         for ii in meta:
             features[ii] = meta[ii]
+        buzz_score = [0, 1]
         features['buzz_prob'] = buzz_score[1]
 
         # Keep track of the longest run we saw for each question
@@ -230,6 +232,9 @@ if __name__ == "__main__":
         #       (outcomes["best"], total, (outcomes["best"] + outcomes["waiting"]) / total,
         #        outcomes["best"] - outcomes["aggressive"] * 0.5, unseen))
     elif flags.evaluate == "guesser":
+        precision = outcomes["hit"]/total
+        recall = outcomes["close"]/total
+        f1 = 2*precision*recall/(precision + recall)
         print("Precision @1: %0.4f Recall: %0.4f" % (outcomes["hit"]/total, outcomes["close"]/total))
 
     exit(0)

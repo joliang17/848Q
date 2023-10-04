@@ -11,11 +11,10 @@ import pandas as pd
 
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.linear_model import LogisticRegression
-from transformers import BertTokenizer, BertModel, BertForSequenceClassification, TrainingArguments, Trainer, pipeline
+from transformers import pipeline
 
 from unidecode import unidecode
 from tqdm import tqdm
-from datasets import Dataset, load_metric, DatasetDict
 
 from collections import Counter
 from collections import defaultdict
