@@ -20,7 +20,7 @@ def add_general_params(parser):
     print("Setting up logging")
 
 def add_question_params(parser):
-    parser.add_argument('--limit', type=int, default=500)
+    parser.add_argument('--limit', type=int, default=2000)
     parser.add_argument('--question_source', type=str, default='gzjson')
     # parser.add_argument('--questions', default = "../data/qanta.buzztrain.json.gz",type=str)
     parser.add_argument('--questions', default = "../data/qanta.buzzdev.json.gz",type=str)
