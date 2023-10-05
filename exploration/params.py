@@ -20,7 +20,7 @@ def add_general_params(parser):
     print("Setting up logging")
 
 def add_question_params(parser):
-    parser.add_argument('--limit', type=int, default=10)
+    parser.add_argument('--limit', type=int, default=500)
     parser.add_argument('--question_source', type=str, default='gzjson')
     # parser.add_argument('--questions', default = "../data/qanta.buzztrain.json.gz",type=str)
     parser.add_argument('--questions', default = "../data/qanta.buzzdev.json.gz",type=str)
@@ -28,13 +28,9 @@ def add_question_params(parser):
     parser.add_argument('--expo_output_root', default="expo/expo", type=str)
 
 def add_buzzer_params(parser):
-    # parser.add_argument('--buzzer_guessers', nargs='+', default = ['GprGuesser', 'TfidfGuesser', 'BERTGuesser'], help='Guessers to feed into Buzzer', type=str) 
-    # parser.add_argument('--buzzer_guessers', nargs='+', default = ['GprGuesser', ], help='Guessers to feed into Buzzer', type=str) 
     parser.add_argument('--buzzer_guessers', nargs='+', default = ['GprGuesser', 'TfidfGuesser'], help='Guessers to feed into Buzzer', type=str) 
-    # parser.add_argument('--features', nargs='+', help='Features to feed into Buzzer', type=str,  default=['Length', 'WikiScore'])    
-    parser.add_argument('--features', nargs='+', help='Features to feed into Buzzer', type=str,  default=['Length'])    
-    # parser.add_argument('--buzzer_type', type=str, default="LogisticBuzzer")
-    parser.add_argument('--buzzer_type', type=str, default="BertBuzzer")
+    parser.add_argument('--features', nargs='+', help='Features to feed into Buzzer', type=str,  default=['Length', 'WikiScore', 'GuessinQuestion', 'Frequency'])    
+    parser.add_argument('--buzzer_type', type=str, default="LogisticBuzzer")
     parser.add_argument('--run_length', type=int, default=100)
     parser.add_argument('--LogisticBuzzer_filename', type=str, default="models/LogisticBuzzer")    
     parser.add_argument('--BertBuzzer_filename', type=str, default="models/BertBuzzer")    
@@ -102,6 +98,8 @@ def load_questions(flags, secondary=False):
     assert questions is not None, "Did not load %s of type %s" % (flags.questions, flags.question_source)
 
     if flags.limit > 0:
+        if 'questions' in questions:
+            questions = questions['questions']
         questions = questions[:flags.limit]
 
     logging.info("Read %i questions" % len(questions))

@@ -30,6 +30,9 @@ def eval_retrieval(guesser, questions, n_guesses=25, cutoff=-1, dump_guesses=Tru
     examples = defaultdict(list)
 
     question_text = []
+    if 'question' in questions:
+        questions = questions['questions']
+
     for question in tqdm(questions):
         text = question["text"]
         if cutoff == 0:
