@@ -92,7 +92,7 @@ class Guesser:
         return answers_to_questions
 
     @staticmethod
-    def filter_answers(questions_keyed_by_answers, remove_missing_pages=False,
+    def filter_answers(questions_keyed_by_answers, remove_missing_pages=True,
                        answer_lookup=None):
         """
         Remove missing answers or answers that aren't included in lookup.
