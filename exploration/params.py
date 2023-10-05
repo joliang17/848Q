@@ -98,6 +98,8 @@ def load_questions(flags, secondary=False):
     assert questions is not None, "Did not load %s of type %s" % (flags.questions, flags.question_source)
 
     if flags.limit > 0:
+        if 'questions' in questions:
+            questions = questions['questions']
         questions = questions[:flags.limit]
 
     logging.info("Read %i questions" % len(questions))

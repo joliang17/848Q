@@ -203,6 +203,8 @@ class Buzzer:
         self.finalize()
         
         num_questions = 0
+        if 'questions' in questions:
+            questions = questions['questions']
         for qq in tqdm(questions):
             answer = qq[answer_field]
             text = qq["text"]
