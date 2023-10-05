@@ -297,7 +297,7 @@ class Buzzer:
         if isinstance(self._classifier, LogisticRegression):
             return self._classifier.predict(X), X, self._features, self._correct, self._metadata
         else:
-            clf = pipeline("text-classification", model=self._classifier, tokenizer=self.bert_tokenizer)
+            clf = pipeline("text-classification", model=self._classifier, tokenizer=self.bert_tokenizer, device=self.device)
             input_seq = [self._metadata[i]['guess'] + '[SEP]' + self._metadata[i]['text'] for i in range(len(self._metadata))]
             results = clf(input_seq)
             predict_result = [item['label'] == 'LABEL_1' for item in results]

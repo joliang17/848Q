@@ -1,8 +1,20 @@
 #!/bin/bash
 
+#SBATCH --job-name=bert_proj
+#SBATCH --output=bert_proj.out.%j
+#SBATCH --error=bert_proj.out.%j
+#SBATCH --time=48:00:00
+#SBATCH --account=scavenger 
+#SBATCH --partition=scavenger
+#SBATCH --gres=gpu:rtxa5000:1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=128G
+
+source /fs/nexus-scratch/yliang17/miniconda3/bin/activate expr
+
 # guesser_size=40000
 guesser_size=50000
-buzzer_size=2000
+buzzer_size=500
 
 # #####################
 # # GprGuesser (already trained by default)
@@ -43,25 +55,45 @@ buzzer_size=2000
 #####################
 # train buzzer
 
-# gpt cache guesser
-python3 buzzer.py \
-    --buzzer_type=LogisticBuzzer \
-    --limit=${buzzer_size}  \
-    --question_source=gzjson \
-    --questions=../data/qanta.buzztrain.json.gz \
-    --run_length=100 \
-    --features Length \
-    --buzzer_guessers GprGuesser TfidfGuesser \
-    --GprGuesser_filename=../models/gpt_cache.tar.gz
-    # --features Length WikiScore \
+# # gpt cache guesser
+# python3 buzzer.py \
+#     --buzzer_type=BertBuzzer \
+#     --question_source=gzjson \
+#     --questions=../data/qanta.buzztrain.json.gz \
+#     --limit=5000 \
+#     --features Length \
+#     --buzzer_guessers TfidfGuesser \
+#     --BertGuesser_filename=models/BertGuesser_tf > buzzer_train_tf.out
 
-# eval buzzer
+# # eval buzzer
 # python3 eval.py \
-#     --buzzer_type=LogisticBuzzer \
+#     --buzzer_type=BertBuzzer \
 #     --evaluate=buzzer \
 #     --question_source=gzjson \
 #     --questions=../data/qanta.buzzdev.json.gz \
 #     --limit=500 \
 #     --features Length \
-#     --buzzer_guessers GprGuesser TfidfGuesser \
-#     --GprGuesser_filename=../models/gpt_cache.tar.gz > buzzer_eval.out
+#     --buzzer_guessers TfidfGuesser \
+#     --BertGuesser_filename=models/BertGuesser_tf > buzzer_eval_tf.out
+
+
+# gpt cache guesser
+# python3 buzzer.py \
+#     --buzzer_type=BertBuzzer \
+#     --question_source=gzjson \
+#     --questions=../data/qanta.buzztrain.json.gz \
+#     --limit=500 \
+#     --features Length \
+#     --buzzer_guessers TfidfGuesser GprGuesser \
+#     --BertGuesser_filename=models/BertGuesser_tf_v1 > buzzer_train_tf_v1.out
+
+# eval buzzer
+python3 eval.py \
+    --buzzer_type=BertBuzzer \
+    --evaluate=buzzer \
+    --question_source=gzjson \
+    --questions=../data/qanta.buzzdev.json.gz \
+    --limit=500 \
+    --features Length \
+    --buzzer_guessers TfidfGuesser GprGuesser \
+    --BertGuesser_filename=models/BertGuesser_tf_v1 > buzzer_eval_tf_v1.out
