@@ -44,7 +44,7 @@ class BertBuzzer(Buzzer):
             cur_data = {'labels': cur_l, 'text': meta["guess"] + '[SEP]' + meta["text"]}
             trans_datasets.append(cur_data)
 
-        if o_label is None:
+        if o_label is not None:
             # split train & test data
             datasets = Dataset.from_pandas(pd.DataFrame(data=trans_datasets))
             train_testvalid = datasets.train_test_split(test_size=0.1)
