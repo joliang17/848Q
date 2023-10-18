@@ -11,7 +11,7 @@ import pandas as pd
 
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.linear_model import LogisticRegression
-# from transformers import pipeline
+from transformers import pipeline
 
 from unidecode import unidecode
 from tqdm import tqdm
